@@ -18,8 +18,8 @@ const io = socketIO(server);
 io.on('connection', socket => {
     console.log('Client connected');
 
-    // when the client disconnect
-    // prints a message
+    // when the client disconnects
+    // print a message
     socket.on('disconnect', () => {
         console.log('Client disconnected')
     });
