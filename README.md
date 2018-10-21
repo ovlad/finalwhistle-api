@@ -4,7 +4,7 @@
 https://finalwhistle-api.herokuapp.com/
 
 #### Exposed Events
-* `hello`
+* #### `hello`
     
     _usage example_
     ```javascript
@@ -18,7 +18,7 @@ https://finalwhistle-api.herokuapp.com/
     });
     ```
 
-* `exception`
+* #### `exception`
 
     _description_
      
@@ -50,7 +50,7 @@ https://finalwhistle-api.herokuapp.com/
     });
     ```
 
-* `join`
+* #### `join`
   
     _description_
     
@@ -65,7 +65,7 @@ https://finalwhistle-api.herokuapp.com/
     socket.emit('join', 'john');
     ```
 
-* `players`
+* #### `players`
   
     _description_
     
@@ -99,7 +99,7 @@ https://finalwhistle-api.herokuapp.com/
     });
     ```
     
-* `new_player`
+* #### `new_player`
     
     _description_
     
@@ -121,7 +121,7 @@ https://finalwhistle-api.herokuapp.com/
     });
     ```
     
-* `player_has_disconnected`
+* #### `player_has_disconnected`
     
     _description_
     
