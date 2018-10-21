@@ -23,7 +23,7 @@ https://finalwhistle-api.herokuapp.com/
     _description_
      
     This event is used to listen for any errors that come from the server. The `error` object received has the following format:
-    ```json
+    ```
     {
         "code": <integer>,
         "message": <string> 
@@ -70,7 +70,7 @@ https://finalwhistle-api.herokuapp.com/
     _description_
     
     The event is used to listen for the current players server information. The players received data has the following format:
-     ```json
+     ```
      {
           "username1": {
               "socketId": <string>,
