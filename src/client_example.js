@@ -41,3 +41,7 @@ socket.on('player_has_disconnected', username => {
 socket.on('exception', error => {
     console.log('ERROR: ', error);
 });
+
+socket.on('all_players_ready', () => {
+    console.log('All players are ready to play!');
+});

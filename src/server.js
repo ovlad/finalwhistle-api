@@ -199,7 +199,7 @@ app.post('/hero_card_selector', (req, res) => {
         return;
     }
 
-    if (!_.isString(username) || !_.isUndefined(players[username])) {
+    if (!_.isString(username) || _.isUndefined(players[username])) {
         res.json(response.error('invalid_params', 'Invalid `username` param'));
         return;
     }
