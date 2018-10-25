@@ -31,21 +31,15 @@ let players = {};
 
 /* ------------------- GET METHODS ------------------- */
 app.get('/minions_cards', (req, res) => {
-    res.json(response.success({
-        minions: suffleArray.pick(allCards.minions, { picks: 24 })
-    }))
+    res.json(response.success(suffleArray.pick(allCards.minions, { picks: 24 })));
 });
 
 app.get('/functional_cards', (req, res) => {
-    res.json(response.success({
-        minions: suffleArray.pick(allCards.functional, { picks: 10 })
-    }))
+    res.json(response.success(suffleArray.pick(allCards.functional, { picks: 10 })));
 });
 
 app.get('/heroes_cards', (req, res) => {
-    res.json(response.success({
-        minions: suffleArray.pick(allCards.heroes, { picks: 40 })
-    }))
+    res.json(response.success(suffleArray.pick(allCards.heroes, { picks: 40 })));
 });
 
 app.get('*', (req, res) => {

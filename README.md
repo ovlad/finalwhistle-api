@@ -6,9 +6,66 @@ https://finalwhistle-api.herokuapp.com/
 #### Exposed API
 * #### `GET /minions_cards`
 
+  _description_
+  
+  The method retrieves 24 random minion cards. 
+  
+  _response body example_
+  ```
+  {
+    "result": [
+        {
+            ...card details...
+        },
+        {
+            ...card details...
+        },
+        ...
+    ] 
+  }
+   ```
+
 * #### `GET /functional_cards`
 
+  _description_
+  
+  The method retrieves 10 random functional cards. 
+  
+  _response body example_
+  ```
+  {
+    "result": [
+        {
+            ...card details...
+        },
+        {
+            ...card details...
+        },
+        ...
+    ] 
+  }
+   ```
+
 * #### `GET /hero_card`
+
+  _description_
+  
+  The method retrieves 40 random hero cards. 
+  
+  _response body example_
+  ```
+  {
+    "result": [
+        {
+            ...card details...
+        },
+        {
+            ...card details...
+        },
+        ...
+    ] 
+  }
+   ```
 
 * #### `POST /minions_cards_selector`
 
