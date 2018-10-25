@@ -75,9 +75,9 @@ https://finalwhistle-api.herokuapp.com/
   
   _request body params_
 
-  | Parameter | Type              | Description                    | Mandatory |                                                                 |
+  | Parameter | Type              | Description                    | Mandatory |
   |-----------|-------------------|--------------------------------|-----------|
-  | username  | string            | the username                   | YES       |                                                            |||
+  | username  | string            | the username                   | YES       |
   | cards     | array of integers | 11 indexes of the chosen cards | YES       |
   
   _request body example_
@@ -103,9 +103,9 @@ https://finalwhistle-api.herokuapp.com/
   
   _request body params_
 
-  | Parameter | Type              | Description                   | Mandatory |                                                                 |
+  | Parameter | Type              | Description                   | Mandatory |
   |-----------|-------------------|-------------------------------|-----------|
-  | username  | string            | the username                  | YES       |                                                            |||
+  | username  | string            | the username                  | YES       |
   | cards     | array of integers | 5 indexes of the chosen cards | YES       |
   
   _request body example_
@@ -131,9 +131,9 @@ https://finalwhistle-api.herokuapp.com/
   
   _request body params_
 
-  | Parameter | Type    | Description         | Mandatory |                                                                 |
+  | Parameter | Type    | Description         | Mandatory |
   |-----------|---------|---------------------|-----------|
-  | username  | string  | the username        | YES       |                                                            |||
+  | username  | string  | the username        | YES       |
   | card      | integer | the hero card index | YES       |
   
   _request body example_
