@@ -98,10 +98,12 @@ app.post('/minions_cards_selector', (req, res) => {
             let allReady = true;
 
             // check players status
-            for (let username in players) {
-                if (!players.hasOwnProperty(username) || players[username].isReady === false) {
-                    allReady = false;
-                    break;
+            if (players.length === MAX_NR_PLAYERS) {
+                for (let username in players) {
+                    if (!players.hasOwnProperty(username) || players[username].isReady === false) {
+                        allReady = false;
+                        break;
+                    }
                 }
             }
 
@@ -160,10 +162,12 @@ app.post('/functional_cards_selector', (req, res) => {
             let allReady = true;
 
             // check players status
-            for (let username in players) {
-                if (!players.hasOwnProperty(username) || players[username].isReady === false) {
-                    allReady = false;
-                    break;
+            if (players.length === MAX_NR_PLAYERS) {
+                for (let username in players) {
+                    if (!players.hasOwnProperty(username) || players[username].isReady === false) {
+                        allReady = false;
+                        break;
+                    }
                 }
             }
 
@@ -215,10 +219,12 @@ app.post('/hero_card_selector', (req, res) => {
             let allReady = true;
 
             // check players status
-            for (let username in players) {
-                if (!players.hasOwnProperty(username) || players[username].isReady === false) {
-                    allReady = false;
-                    break;
+            if (players.length === MAX_NR_PLAYERS) {
+                for (let username in players) {
+                    if (!players.hasOwnProperty(username) || players[username].isReady === false) {
+                        allReady = false;
+                        break;
+                    }
                 }
             }
 
