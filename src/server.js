@@ -30,30 +30,30 @@ app.use((req, res, next) => {
 let players = {};
 
 /* ------------------- GET METHODS ------------------- */
-app.get('/minions_cards', res => {
+app.get('/minions_cards', (req, res) => {
     res.json(response.success({
         minions: suffleArray.pick(allCards.minions, { picks: 24 })
     }))
 });
 
-app.get('/functional_cards', res => {
+app.get('/functional_cards', (req, res) => {
     res.json(response.success({
         minions: suffleArray.pick(allCards.functional, { picks: 10 })
     }))
 });
 
-app.get('/heroes_cards', res => {
+app.get('/heroes_cards', (req, res) => {
     res.json(response.success({
         minions: suffleArray.pick(allCards.heroes, { picks: 40 })
     }))
 });
 
-app.get('*', (res, req) => {
-    req.send('Hello world!');
+app.get('*', (req, res) => {
+    res.send('Hello world!');
 });
 
 /* ------------------- POST METHODS ------------------- */
-app.post('/minions_cards_selector', (res, req) => {
+app.post('/minions_cards_selector', (req, res) => {
     let body = req.body || {};
 
     // params
@@ -115,7 +115,7 @@ app.post('/minions_cards_selector', (res, req) => {
     res.json(response.success(true));
 });
 
-app.post('/functional_cards_selector', (res, req) => {
+app.post('/functional_cards_selector', (req, res) => {
     let body = req.body || {};
 
     // params
@@ -177,7 +177,7 @@ app.post('/functional_cards_selector', (res, req) => {
     res.json(response.success(true));
 });
 
-app.post('/hero_card_selector', (res, req) => {
+app.post('/hero_card_selector', (req, res) => {
     let body = req.body || {};
 
     // params
