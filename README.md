@@ -69,10 +69,88 @@ https://finalwhistle-api.herokuapp.com/
 
 * #### `POST /minions_cards_selector`
 
+  _description_
+  
+  The method set the player chosen minions cards. 
+  
+  _request body params_
+
+  | Parameter | Type              | Description                    | Mandatory |                                                                 |
+  |-----------|-------------------|--------------------------------|-----------|
+  | username  | string            | the username                   | YES       |                                                            |||
+  | cards     | array of integers | 11 indexes of the chosen cards | YES       |
+  
+  _request body example_
+  ```json
+  {
+    "username": "john",
+    "cards": [1, 15, 22, 4, 7, 2, 3, 10, 23, 30, 9]
+  }
+  ```
+  
+  _response body example_
+    ```json
+    {
+      "result": true
+    }
+     ```
+  
 * #### `POST /functional_cards_selector`
 
+  _description_
+  
+  The method set the player chosen functional cards. 
+  
+  _request body params_
+
+  | Parameter | Type              | Description                   | Mandatory |                                                                 |
+  |-----------|-------------------|-------------------------------|-----------|
+  | username  | string            | the username                  | YES       |                                                            |||
+  | cards     | array of integers | 5 indexes of the chosen cards | YES       |
+  
+  _request body example_
+  ```json
+  {
+    "username": "john",
+    "cards": [1, 15, 22, 4, 7]
+  }
+  ```
+  
+  _response body example_
+    ```json
+    {
+      "result": true
+    }
+     ```
+  
 * #### `POST /hero_cards_selector`
 
+  _description_
+  
+  The method set the player chosen hero card. 
+  
+  _request body params_
+
+  | Parameter | Type    | Description         | Mandatory |                                                                 |
+  |-----------|---------|---------------------|-----------|
+  | username  | string  | the username        | YES       |                                                            |||
+  | card      | integer | the hero card index | YES       |
+  
+  _request body example_
+  ```json
+  {
+    "username": "john",
+    "card": 4
+  }
+  ```
+  
+  _response body example_
+    ```json
+    {
+      "result": true
+    }
+     ```
+  
 #### Exposed Events
 * #### `hello`
     
