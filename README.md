@@ -3,6 +3,19 @@
 #### API/Sockets Endpoint
 https://finalwhistle-api.herokuapp.com/
 
+#### Exposed API
+* #### `GET /minions_cards`
+
+* #### `GET /functional_cards`
+
+* #### `GET /hero_card`
+
+* #### `POST /minions_cards_selector`
+
+* #### `POST /functional_cards_selector`
+
+* #### `POST /hero_cards_selector`
+
 #### Exposed Events
 * #### `hello`
     
@@ -25,6 +38,7 @@ https://finalwhistle-api.herokuapp.com/
     This event is used to listen for any errors that come from the server. The `error` object received has the following format:
     ```
     {
+        "event": <string>
         "code": <integer>,
         "message": <string> 
         "data": <any|null>
@@ -35,6 +49,8 @@ https://finalwhistle-api.herokuapp.com/
     | Code   | Message                                                                  |
     |--------|--------------------------------------------------------------------------|
     | -30000 | Unknown error                                                            |
+    | -32700 | Params error                                                             |
+    | -32601 | Invalid params                                                           |
     | -20000 | No room left in the game. The maximum number of players has been reached |
     | -11000 | Invalid username                                                         |                                                      |
 
@@ -75,10 +91,12 @@ https://finalwhistle-api.herokuapp.com/
           "username1": {
               "socketId": <string>,
               "username": "username1"
+              "isReady": false
           },
           "username2": {
               "socketId": <string>,
-              "username": "username2" 
+              "username": "username2",
+              "isReady": false 
           },
           ...
      }
@@ -140,5 +158,22 @@ https://finalwhistle-api.herokuapp.com/
     socket.on('player_has_disconnected', username => {
         delete players[username];
     });
-    ``` 
-
+    ```
+    
+* #### `all_players_ready`
+    
+    _description_
+    
+    The event is used to listen when all the players are ready to play (they chose all the cards to play).  
+    
+    _usage example_
+     
+    ```javascript
+    const socketIO = require('socket.io-client');
+    const socket = socketIO('https://finalwhistle-api.herokuapp.com');  
+    
+    // when server announces that all the players are ready to play, do something 
+    socket.on('all_players_ready', () => {
+        // do something
+    });
+    ```
