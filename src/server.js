@@ -6,6 +6,7 @@ const socketIO = require('socket.io');
 const _ = require('lodash');
 const bodyParser = require('body-parser');
 const suffleArray = require('shuffle-array');
+const cors = require('cors');
 
 const error = require('./utils/error');
 const response = require('./utils/response');
@@ -15,6 +16,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketIO(server);
 
+app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use((req, res, next) => {
     bodyParser.json({limit: '50mb'})(req, res, error => {
@@ -39,7 +41,7 @@ app.get('/functional_cards', (req, res) => {
 });
 
 app.get('/heroes_cards', (req, res) => {
-    res.json(response.success(suffleArray.pick(allCards.heroes, { picks: 40 })));
+    res.json(response.success(suffleArray.pick(allCards.heroes, { picks: 6 })));
 });
 
 app.get('*', (req, res) => {
