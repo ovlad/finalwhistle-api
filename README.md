@@ -46,7 +46,7 @@ https://finalwhistle-api.herokuapp.com/
   }
    ```
 
-* #### `GET /hero_card`
+* #### `GET /heroes_cards`
 
   _description_
   
