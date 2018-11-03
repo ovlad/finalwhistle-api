@@ -16,6 +16,9 @@ const app = express();
 const server = http.Server(app);
 const io = socketIO(server);
 
+const PORT = process.env.PORT || 4321;
+const MAX_NR_PLAYERS = 2;
+
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use((req, res, next) => {
@@ -30,6 +33,43 @@ app.use((req, res, next) => {
 
 // stores data about each connected player
 let players = {};
+let currentPlayerUsername;
+let currentPlayerIndex;
+
+// change current player turn based on player index
+let turn = (usernameIndex) => {
+    currentPlayerUsername = Object.keys(players)[usernameIndex];
+    currentPlayerIndex = usernameIndex;
+    Object.keys(players).forEach(name => {players[name].myTurn = false;});
+    players[currentPlayerUsername].myTurn = true;
+    io.emit('turn', currentPlayerUsername);
+    io.emit('gameplay', players);
+};
+
+// check current player status
+let checkCurrentPlayerStatus = username => {
+    if (players[username].isReady === false) {
+        if (players[username].cards.minions && players[username].cards.functional && players[username].cards.hero) {
+            players[username].isReady = true;
+
+            let allReady = true;
+
+            // check players status
+            if (Object.keys(players).length === MAX_NR_PLAYERS) {
+                Object.keys(players).forEach(username => {
+                    if (players[username].isReady === false) {
+                        allReady = false;
+                    }
+                });
+            }
+
+            if (allReady) {
+                io.emit('all_players_ready');
+                turn(0);
+            }
+        }
+    }
+};
 
 /* ------------------- GET METHODS ------------------- */
 app.get('/minions_cards', (req, res) => {
@@ -86,31 +126,11 @@ app.post('/minions_cards_selector', (req, res) => {
     // store the user selected cards
     players[username].cards.minions = cards;
 
-    // check current player status
-    if (players[username].isReady === false) {
-        if (players[username].cards.minions && players[username].cards.functional && players[username].cards.hero) {
-            players[username].isReady = true;
-
-            let allReady = true;
-
-            // check players status
-            if (players.length === MAX_NR_PLAYERS) {
-                for (let username in players) {
-                    if (!players.hasOwnProperty(username) || players[username].isReady === false) {
-                        allReady = false;
-                        break;
-                    }
-                }
-            }
-
-            if (allReady) {
-                io.emit('all_players_ready');
-            }
-        }
-    }
-
     // respond
     res.json(response.success(true));
+
+    // check current player status
+    checkCurrentPlayerStatus(username);
 });
 
 app.post('/functional_cards_selector', (req, res) => {
@@ -150,31 +170,11 @@ app.post('/functional_cards_selector', (req, res) => {
     // store the user selected cards
     players[username].cards.functional = cards;
 
-    // check current player status
-    if (players[username].isReady === false) {
-        if (players[username].cards.minions && players[username].cards.functional && players[username].cards.hero) {
-            players[username].isReady = true;
-
-            let allReady = true;
-
-            // check players status
-            if (players.length === MAX_NR_PLAYERS) {
-                for (let username in players) {
-                    if (!players.hasOwnProperty(username) || players[username].isReady === false) {
-                        allReady = false;
-                        break;
-                    }
-                }
-            }
-
-            if (allReady) {
-                io.emit('all_players_ready');
-            }
-        }
-    }
-
     // respond
     res.json(response.success(true));
+
+    // check current player status
+    checkCurrentPlayerStatus(username);
 });
 
 app.post('/hero_card_selector', (req, res) => {
@@ -207,28 +207,125 @@ app.post('/hero_card_selector', (req, res) => {
     // store the user selected card
     players[username].cards.hero = card;
 
+    // respond
+    res.json(response.success(true));
+
     // check current player status
-    if (players[username].isReady === false) {
-        if (players[username].cards.minions && players[username].cards.functional && players[username].cards.hero) {
-            players[username].isReady = true;
+    checkCurrentPlayerStatus(username);
+});
 
-            let allReady = true;
+app.post('/play_card', (req, res) => {
+    let body = req.body || {};
 
-            // check players status
-            if (players.length === MAX_NR_PLAYERS) {
-                for (let username in players) {
-                    if (!players.hasOwnProperty(username) || players[username].isReady === false) {
-                        allReady = false;
-                        break;
-                    }
-                }
-            }
+    // params
+    let username = body.username;
+    let cardType = body.card_type;
+    let cardId = body.card_id;
+    let position = body.position;
 
-            if (allReady) {
-                io.emit('all_players_ready');
-            }
+    if (_.isUndefined(username)) {
+        res.json(response.error('invalid_params', 'Missing `username` param'));
+        return;
+    }
+
+    if (_.isUndefined(cardType)) {
+        res.json(response.error('invalid_params', 'Missing `card_type` param'));
+        return;
+    }
+
+    if (_.isUndefined(cardId)) {
+        res.json(response.error('invalid_params', 'Missing `card_id` param'));
+        return;
+    }
+
+    if (_.isUndefined(cardId)) {
+        res.json(response.error('invalid_params', 'Missing `position` param'));
+        return;
+    }
+
+    if (!_.isString(username) || _.isUndefined(players[username])) {
+        res.json(response.error('invalid_params', 'Invalid `username` param'));
+        return;
+    }
+
+    if (username !== currentPlayerUsername) {
+        res.json(response.error('invalid_params', 'Invalid `username` param. It is not `' + username + '` turn'));
+        return;
+    }
+
+    if (!_.isString(cardType) || !['M', 'F'].includes(cardType.toUpperCase())) {
+        res.json(response.error('invalid_params', 'Invalid `card_type` param'));
+        return;
+    }
+
+    cardType = cardType.toUpperCase();
+
+    if (!_.isInteger(cardId)) {
+        res.json(response.error('invalid_params', 'Invalid `card_id` param'));
+        return;
+    }
+
+    if (cardType === 'M') {
+        if (!players[username].cards.minions.includes(cardId)) {
+            res.json(response.error('invalid_params', 'Invalid `card_id` param'));
+            return;
+        }
+
+
+        if (!_.isString(position) || !['GOALKEEPER', 'DEFENCE', 'MID', 'ATTACK'].includes(position.toUpperCase())) {
+            res.json(response.error('invalid_params', 'Invalid `position` param'));
+            return;
+        }
+
+        position = position.toLowerCase();
+    } else if (cardType === 'F') {
+        if (!players[username].cards.functional.includes(cardId)) {
+            res.json(response.error('invalid_params', 'Invalid `card_id` param'));
+            return;
         }
     }
+
+    // respond
+    res.json(response.success(true));
+
+    if (cardType === 'M') {
+        // remove card from player's hand
+        players[username].cards.minions.splice(players[username].cards.minions.indexOf(cardId), 1);
+
+        // add card to the board
+        if (position === 'goalkeeper') {
+            players[username].board.goalkeeper = cardId;
+        } else {
+            players[username].board[position].push(cardId);
+        }
+    } else if (cardType === 'F') {
+        // remove card from player's hand
+        players[username].cards.functional.splice(players[username].cards.functional.indexOf(cardId), 1);
+
+        // do something
+        // ...
+    }
+
+    io.emit('gameplay', players);
+});
+
+app.post('/end_turn', (req, res) => {
+    let body = req.body || {};
+
+    // params
+    let username = body.username;
+
+    if (_.isUndefined(username)) {
+        res.json(response.error('invalid_params', 'Missing `username` param'));
+        return;
+    }
+
+    if (!_.isString(username) || _.isUndefined(players[username])) {
+        res.json(response.error('invalid_params', 'Invalid `username` param'));
+        return;
+    }
+
+    turn(currentPlayerIndex === 1 ? 0 : 1);
 
     // respond
     res.json(response.success(true));
@@ -252,9 +349,6 @@ app.patch('*', (req, res) => {
 app.delete('*', (req, res) => {
     res.sendStatus(405);
 });
-
-const PORT = process.env.PORT || 4321;
-const MAX_NR_PLAYERS = 2;
 
 // when a new connection with a client is established
 // => a new player is connected
@@ -288,7 +382,15 @@ io.on('connection', socket => {
             socketId: socket.id,
             username: username,
             cards: {},
-            isReady: false
+            board: {
+                goalkeeper: null,
+                defence: [],
+                mid: [],
+                attack: []
+            },
+            totalPoints: 0,
+            isReady: false,
+            myTurn: false
         };
 
         // send to the player all the current players information the server knows

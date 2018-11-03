@@ -123,7 +123,7 @@ https://finalwhistle-api.herokuapp.com/
     }
      ```
   
-* #### `POST /hero_cards_selector`
+* #### `POST /hero_card_selector`
 
   _description_
   
@@ -150,6 +150,64 @@ https://finalwhistle-api.herokuapp.com/
       "result": true
     }
      ```
+
+* #### `POST /play_card`
+
+  _description_
+  
+  With this method the user can play a card. 
+  
+  _request body params_
+
+  | Parameter | Type    | Description         | Mandatory |
+  |-----------|---------|---------------------|-----------|
+  | username  | string  | the username        | YES       |
+  | card_type      | string | the card type (possible values: **M** for minion card, **F** for functional card)| YES       |
+  | card_id      | integer | the card id | YES       |
+  | position      | string | the card play position (possible values: **GAOLKEEPER**, **DEFENCE**, **MID** and **ATTACK**) | NO if card_type is **F**, YES otherwise       |
+  
+  _request body example_
+  ```json
+  {
+    "username": "john",
+    "card_type": "M",
+    "card_id": 4,
+    "position": "MID"
+  }
+  ```
+  
+  _response body example_
+    ```json
+    {
+     "result": true
+    }
+    ```
+
+* #### `POST /end_turn`
+
+  _description_
+  
+  With this method the user can end his turn. The next player username will be emitted via the `turn` event.
+  
+  _request body params_
+
+  | Parameter | Type    | Description         | Mandatory |
+  |-----------|---------|---------------------|-----------|
+  | username  | string  | the username        | YES       |
+  
+  _request body example_
+  ```json
+  {
+    "username": "john",
+  }
+  ```
+  
+  _response body example_
+    ```json
+    {
+     "result": true
+    }
+    ```
   
 #### Exposed Events
 * #### `hello`
@@ -312,3 +370,66 @@ https://finalwhistle-api.herokuapp.com/
         // do something
     });
     ```
+
+* #### `turn`
+    
+    _description_
+    
+    The event is used to listen for the current player's turn. This event will be fired when the turn is changed and it will emit the username of current player.
+
+    _usage example_
+     
+    ```javascript
+    const socketIO = require('socket.io-client');
+    const socket = socketIO('https://finalwhistle-api.herokuapp.com');  
+    
+    // wait for the server to tell whose turn it is
+    socket.on('turn', username => {
+       console.log('now is `' + username + '` turn');
+    });
+    ```
+
+* #### `gameplay`
+    
+    _description_
+    
+    The event is used to listen for the a change in any players game information. It is fire every time the players information has changed and it will emit the new state of all the players information. 
+
+    _usage example_
+     
+    ```javascript
+    const socketIO = require('socket.io-client');
+    const socket = socketIO('https://finalwhistle-api.herokuapp.com');  
+    
+    // wait for the server to tell whose turn it is
+    socket.on('gameplay', players => {
+       // do something
+    });
+    ```
+    
+    _**players** params_
+    
+    | Parameter | Type    | Description         |
+    |-----------|---------|---------------------|
+    | players._username_ | object | the _username_ information |
+    | players._username_.socketId | string | the player socket id |
+    | players._username_.username | string | the player username |
+    | players._username_.cards | object | the cards ids the player has in his hand |
+    | players._username_.cards.minions | array of _integers_ | the array of the minions cards id the player has in his hand |
+    | players._username_.cards.functional | array of _integers_ | the array of the functional cards id the player has in his hand |
+    | players._username_.cards.hero | integer | the hero card id that the player has in his hand |
+    | players._username_.board | object | the player board information |
+    | players._username_.board.goalkeeper | integer | the minion card id that play as a goalkeeper |
+    | players._username_.board.defence | array of _integers_ | the array of the minions cards id that play in the defence row |
+    | players._username_.board.mid | array of _integers_ | the array of the minions cards id that play in the middle row |
+    | players._username_.board.attack | array of _integers_ | the array of the minions cards id that play in the attack row |
+    | players._username_.totalPoints | integer | ? |
+    | players._username_.isReady | boolean | _**true**_ if it the _username_ is ready to play (has chosen all the cards), _**false**_ oterwises |
+    | players._username_.myTurn | boolean | _**true**_ if it is the _username_ turn, _**false**_ oterwises |
+   
+    
+    
+    
+    
+    
+    

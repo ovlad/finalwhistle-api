@@ -45,3 +45,12 @@ socket.on('exception', error => {
 socket.on('all_players_ready', () => {
     console.log('All players are ready to play!');
 });
+
+// wait for the server to tell whose turn it is
+socket.on('turn', username => {
+   console.log('now is `' + username + '` turn');
+});
+
+socket.on('gameplay', players => {
+    console.log('current game/players status is: ', players);
+});
