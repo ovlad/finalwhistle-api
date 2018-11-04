@@ -124,7 +124,7 @@ app.post('/minions_cards_selector', (req, res) => {
     }
 
     // store the user selected cards
-    players[username].cards.minions = cards;
+    players[username].cards.minions = cards.map(cardId => allCards.minions[cardId]);
 
     // respond
     res.json(response.success(true));
@@ -168,7 +168,7 @@ app.post('/functional_cards_selector', (req, res) => {
     }
 
     // store the user selected cards
-    players[username].cards.functional = cards;
+    players[username].cards.functional = cards.map(cardId => allCards.functional[cardId]);
 
     // respond
     res.json(response.success(true));
@@ -189,7 +189,7 @@ app.post('/hero_card_selector', (req, res) => {
         return;
     }
 
-    if (!_.isInteger(card) || card >= allCards.functional.length || card < 0) {
+    if (!_.isInteger(card) || card >= allCards.heroes.length || card < 0) {
         res.json(response.error('invalid_params', 'Invalid `card` param'));
         return;
     }
@@ -205,7 +205,7 @@ app.post('/hero_card_selector', (req, res) => {
     }
 
     // store the user selected card
-    players[username].cards.hero = card;
+    players[username].cards.hero = allCards.heroes[card];
 
     // respond
     res.json(response.success(true));
@@ -266,7 +266,7 @@ app.post('/play_card', (req, res) => {
     }
 
     if (cardType === 'M') {
-        if (!players[username].cards.minions.includes(cardId)) {
+        if (players[username].cards.minions.findIndex(c => c.id === cardId) === -1) {
             res.json(response.error('invalid_params', 'Invalid `card_id` param'));
             return;
         }
@@ -279,32 +279,38 @@ app.post('/play_card', (req, res) => {
 
         position = position.toLowerCase();
     } else if (cardType === 'F') {
-        if (!players[username].cards.functional.includes(cardId)) {
+        if (players[username].cards.functional.findIndex(c => c.id === cardId) === -1) {
             res.json(response.error('invalid_params', 'Invalid `card_id` param'));
             return;
         }
     }
 
-    // respond
-    res.json(response.success(true));
 
     if (cardType === 'M') {
+        console.log(players[username].cards.minions.findIndex(c => c.id === cardId));
+
         // remove card from player's hand
-        players[username].cards.minions.splice(players[username].cards.minions.indexOf(cardId), 1);
+        players[username].cards.minions.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
+
+
 
         // add card to the board
         if (position === 'goalkeeper') {
-            players[username].board.goalkeeper = cardId;
+            players[username].board.goalkeeper.card = allCards.minions[cardId];
         } else {
-            players[username].board[position].push(cardId);
+            players[username].board[position].cards.push(allCards.minions[cardId]);
         }
     } else if (cardType === 'F') {
         // remove card from player's hand
-        players[username].cards.functional.splice(players[username].cards.functional.indexOf(cardId), 1);
+        players[username].cards.functional.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
 
         // do something
         // ...
     }
+
+
+    // respond
+    res.json(response.success(true));
 
     io.emit('gameplay', players);
 });
@@ -383,10 +389,22 @@ io.on('connection', socket => {
             username: username,
             cards: {},
             board: {
-                goalkeeper: null,
-                defence: [],
-                mid: [],
-                attack: []
+                goalkeeper: {
+                    score: 0,
+                    card: null
+                },
+                defence: {
+                    score: 0,
+                    cards: []
+                },
+                mid: {
+                    score: 0,
+                    cards: []
+                },
+                attack: {
+                    score: 0,
+                    cards: []
+                }
             },
             totalPoints: 0,
             isReady: false,

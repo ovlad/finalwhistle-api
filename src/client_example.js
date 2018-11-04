@@ -1,8 +1,9 @@
 'use strict';
 
+const util = require('util');
 const socketIO = require('socket.io-client');
-const socket = socketIO('https://finalwhistle-api.herokuapp.com');
-// const socket = socketIO('http://localhost:4321'); // for local testing
+// const socket = socketIO('https://finalwhistle-api.herokuapp.com');
+const socket = socketIO('http://localhost:4321'); // for local testing
 
 let players = {};
 
@@ -52,5 +53,5 @@ socket.on('turn', username => {
 });
 
 socket.on('gameplay', players => {
-    console.log('current game/players status is: ', players);
+    console.log('current game/players status is: ', util.inspect(players, false, null));
 });

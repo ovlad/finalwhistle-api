@@ -3,6 +3,7 @@
 module.exports = {
     minions: [
         {
+            "id": 0,
             "name": "Pickford",
             "country": "ENG",
             "club": "Everton",
@@ -14,6 +15,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/22/4c/e2/0c/224ce20c.png"
         },
         {
+            "id": 1,
             "name": "Walker",
             "country": "ENG",
             "club": "Man City",
@@ -25,6 +27,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b2/c6/3a/4d/b2c63a4d.png"
         },
         {
+            "id": 2,
             "name": "Stones",
             "country": "ENG",
             "club": "Man City",
@@ -36,6 +39,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c1/29/55/94/c1295594.png"
         },
         {
+            "id": 3,
             "name": "Maguire",
             "country": "ENG",
             "club": "Leicester",
@@ -47,6 +51,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f1/5f/60/d5/f15f60d5.png"
         },
         {
+            "id": 4,
             "name": "Trippier",
             "country": "ENG",
             "club": "Tottenham",
@@ -58,6 +63,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e0/06/10/8f/e006108f.png"
         },
         {
+            "id": 5,
             "name": "Henderson",
             "country": "ENG",
             "club": "Liverpool",
@@ -69,6 +75,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/70/af/3d/83/70af3d83.png"
         },
         {
+            "id": 6,
             "name": "Alli",
             "country": "ENG",
             "club": "Tottenham",
@@ -80,6 +87,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5a/fa/3c/6b/5afa3c6b.png"
         },
         {
+            "id": 7,
             "name": "Lingard",
             "country": "ENG",
             "club": "Man Utd",
@@ -91,6 +99,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f6/50/90/00/f6509000.png"
         },
         {
+            "id": 8,
             "name": "Young",
             "country": "ENG",
             "club": "Man Utd",
@@ -102,6 +111,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/52/e1/5b/14/52e15b14.png"
         },
         {
+            "id": 9,
             "name": "Sterling",
             "country": "ENG",
             "club": "Man City",
@@ -113,6 +123,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/97/85/39/82978539.png"
         },
         {
+            "id": 10,
             "name": "Kane",
             "country": "ENG",
             "club": "Tottenham",
@@ -124,6 +135,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/df/53/57/61/df535761.png"
         },
         {
+            "id": 11,
             "name": "Armani",
             "country": "ARG",
             "club": "River Plate",
@@ -135,6 +147,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e4/b5/a4/d7/e4b5a4d7.png"
         },
         {
+            "id": 12,
             "name": "Mercado",
             "country": "ARG",
             "club": "Sevilla",
@@ -146,6 +159,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b5/03/bc/a6/b503bca6.png"
         },
         {
+            "id": 13,
             "name": "Rojo",
             "country": "ARG",
             "club": "Man Utd",
@@ -157,6 +171,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a1/31/60/be/a13160be.png"
         },
         {
+            "id": 14,
             "name": "Otamendi",
             "country": "ARG",
             "club": "Man City",
@@ -168,6 +183,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0c/9f/66/35/0c9f6635.png"
         },
         {
+            "id": 15,
             "name": "Tagliafico",
             "country": "ARG",
             "club": "Ajax",
@@ -179,6 +195,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b6/9a/a3/65/b69aa365.png"
         },
         {
+            "id": 16,
             "name": "Mascherano",
             "country": "ARG",
             "club": "Hebei",
@@ -190,6 +207,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ae/28/74/17/ae287417.png"
         },
         {
+            "id": 17,
             "name": "Biglia",
             "country": "ARG",
             "club": "Milan",
@@ -201,6 +219,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/ae/98/cc/ebae98cc.png"
         },
         {
+            "id": 18,
             "name": "Banega",
             "country": "ARG",
             "club": "Sevilla",
@@ -212,6 +231,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4f/c9/cc/c6/4fc9ccc6.png"
         },
         {
+            "id": 19,
             "name": "Di Maria",
             "country": "ARG",
             "club": "PSG",
@@ -223,6 +243,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/10/94/a3/8c/1094a38c.png"
         },
         {
+            "id": 20,
             "name": "Messi",
             "country": "ARG",
             "club": "Barcelona",
@@ -234,6 +255,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/8f/60/2f/868f602f.png"
         },
         {
+            "id": 21,
             "name": "Aguero",
             "country": "ARG",
             "club": "Man City",
@@ -245,6 +267,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4c/ca/ac/4d/4ccaac4d.png"
         },
         {
+            "id": 22,
             "name": "Courtois",
             "country": "BEL",
             "club": "Real Madrid",
@@ -256,6 +279,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/35/fc/fc/23/35fcfc23.png"
         },
         {
+            "id": 23,
             "name": "Alderweireld",
             "country": "BEL",
             "club": "Tottenham",
@@ -267,6 +291,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/10/09/28/eb100928.png"
         },
         {
+            "id": 24,
             "name": "Kompany",
             "country": "BEL",
             "club": "Man City",
@@ -278,6 +303,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0e/5b/98/0d/0e5b980d.png"
         },
         {
+            "id": 25,
             "name": "Vertonghen",
             "country": "BEL",
             "club": "Tottenham",
@@ -289,6 +315,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f1/46/92/2a/f146922a.png"
         },
         {
+            "id": 26,
             "name": "Meunier",
             "country": "BEL",
             "club": "PSG",
@@ -300,6 +327,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f9/ac/a5/a5/f9aca5a5.png"
         },
         {
+            "id": 27,
             "name": "Witsel",
             "country": "BEL",
             "club": "Dortmund",
@@ -311,6 +339,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/18/cb/90/bf/18cb90bf.png"
         },
         {
+            "id": 28,
             "name": "Fellaini",
             "country": "BEL",
             "club": "Man Utd",
@@ -322,6 +351,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/74/9c/80/09/749c8009.png"
         },
         {
+            "id": 29,
             "name": "Chadli",
             "country": "BEL",
             "club": "Monaco",
@@ -333,6 +363,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/47/23/d3/76/4723d376.png"
         },
         {
+            "id": 30,
             "name": "De Bruyne",
             "country": "BEL",
             "club": "Man City",
@@ -344,6 +375,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b6/31/48/c7/b63148c7.png"
         },
         {
+            "id": 31,
             "name": "Hazard",
             "country": "BEL",
             "club": "Chelsea",
@@ -355,6 +387,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/32/96/e4/e8/3296e4e8.png"
         },
         {
+            "id": 32,
             "name": "Lukaku",
             "country": "BEL",
             "club": "Man Utd",
@@ -366,6 +399,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5c/30/eb/c0/5c30ebc0.png"
         },
         {
+            "id": 33,
             "name": "Alisson",
             "country": "BRA",
             "club": "Liverpool",
@@ -377,6 +411,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8b/81/e1/11/8b81e111.png"
         },
         {
+            "id": 34,
             "name": "Fagner",
             "country": "BRA",
             "club": "Corinthians",
@@ -388,6 +423,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f0/22/63/81/f0226381.png"
         },
         {
+            "id": 35,
             "name": "Miranda",
             "country": "BRA",
             "club": "Inter",
@@ -399,6 +435,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ec/05/0a/15/ec050a15.png"
         },
         {
+            "id": 36,
             "name": "Thiago Silva",
             "country": "BRA",
             "club": "PSG",
@@ -410,6 +447,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/33/76/cd/67/3376cd67.png"
         },
         {
+            "id": 37,
             "name": "Marcelo",
             "country": "BRA",
             "club": "Real Madrid",
@@ -421,6 +459,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f5/f2/86/78/f5f28678.png"
         },
         {
+            "id": 38,
             "name": "Fernandinho",
             "country": "BRA",
             "club": "Man City",
@@ -432,6 +471,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/15/e6/c6/7f/15e6c67f.png"
         },
         {
+            "id": 39,
             "name": "Paulinho",
             "country": "BRA",
             "club": "Guangzhou",
@@ -443,6 +483,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7c/b9/84/23/7cb98423.png"
         },
         {
+            "id": 40,
             "name": "Coutinho",
             "country": "BRA",
             "club": "Barcelona",
@@ -454,6 +495,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/cd/d3/de/82cdd3de.png"
         },
         {
+            "id": 41,
             "name": "Willian",
             "country": "BRA",
             "club": "Chelsea",
@@ -465,6 +507,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4e/68/4e/82/4e684e82.png"
         },
         {
+            "id": 42,
             "name": "Neymar",
             "country": "BRA",
             "club": "PSG",
@@ -476,6 +519,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5a/bc/0f/42/5abc0f42.png"
         },
         {
+            "id": 43,
             "name": "Gabriel Jesus",
             "country": "BRA",
             "club": "Man City",
@@ -487,6 +531,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/65/38/f9/ee/6538f9ee.png"
         },
         {
+            "id": 44,
             "name": "Ospina",
             "country": "COL",
             "club": "Napoli",
@@ -498,6 +543,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dd/ac/a1/78/ddaca178.png"
         },
         {
+            "id": 45,
             "name": "Arias",
             "country": "COL",
             "club": "Atletico",
@@ -509,6 +555,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/45/12/21/1a/4512211a.png"
         },
         {
+            "id": 46,
             "name": "D.Sanchez",
             "country": "COL",
             "club": "Tottenham",
@@ -520,6 +567,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/cc/3c/02/72/cc3c0272.png"
         },
         {
+            "id": 47,
             "name": "Mina",
             "country": "COL",
             "club": "Everton",
@@ -531,6 +579,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fc/de/62/ed/fcde62ed.png"
         },
         {
+            "id": 48,
             "name": "Mojica",
             "country": "COL",
             "club": "Girona",
@@ -542,6 +591,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c6/cd/a9/19/c6cda919.png"
         },
         {
+            "id": 49,
             "name": "C.Sanchez",
             "country": "COL",
             "club": "West Ham",
@@ -553,6 +603,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bf/8c/7a/a8/bf8c7aa8.png"
         },
         {
+            "id": 50,
             "name": "Barrios",
             "country": "COL",
             "club": "Boca Juniors",
@@ -564,6 +615,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/80/e8/fd/74/80e8fd74.png"
         },
         {
+            "id": 51,
             "name": "Quintero",
             "country": "COL",
             "club": "River Plate",
@@ -575,6 +627,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/09/a2/0c/68/09a20c68.png"
         },
         {
+            "id": 52,
             "name": "Cuadrado",
             "country": "COL",
             "club": "Juventus",
@@ -586,6 +639,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e8/5c/1c/0a/e85c1c0a.png"
         },
         {
+            "id": 53,
             "name": "James",
             "country": "COL",
             "club": "Bayern",
@@ -597,6 +651,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b0/76/99/2b/b076992b.png"
         },
         {
+            "id": 54,
             "name": "Falcao",
             "country": "COL",
             "club": "Monaco",
@@ -608,6 +663,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/99/ac/10/15/99ac1015.png"
         },
         {
+            "id": 55,
             "name": "Subasic",
             "country": "CRO",
             "club": "Monaco",
@@ -619,6 +675,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e3/47/77/d7/e34777d7.png"
         },
         {
+            "id": 56,
             "name": "Vrsaljko",
             "country": "CRO",
             "club": "Inter",
@@ -630,6 +687,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/00/f4/95/0a/00f4950a.png"
         },
         {
+            "id": 57,
             "name": "Lovren",
             "country": "CRO",
             "club": "Liverpool",
@@ -641,6 +699,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/53/74/d7/d7/5374d7d7.png"
         },
         {
+            "id": 58,
             "name": "Vida",
             "country": "CRO",
             "club": "Besiktas",
@@ -652,6 +711,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/b5/3f/8f/ebb53f8f.png"
         },
         {
+            "id": 59,
             "name": "Strinic",
             "country": "CRO",
             "club": "Milan",
@@ -663,6 +723,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/22/dc/69/24/22dc6924.png"
         },
         {
+            "id": 60,
             "name": "Brozovic",
             "country": "CRO",
             "club": "Inter",
@@ -674,6 +735,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0b/09/94/6d/0b09946d.png"
         },
         {
+            "id": 61,
             "name": "Rakitic",
             "country": "CRO",
             "club": "Barcelona",
@@ -685,6 +747,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a4/e2/f5/1e/a4e2f51e.png"
         },
         {
+            "id": 62,
             "name": "Modric",
             "country": "CRO",
             "club": "Real Madrid",
@@ -696,6 +759,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f4/82/1b/c6/f4821bc6.png"
         },
         {
+            "id": 63,
             "name": "Rebic",
             "country": "CRO",
             "club": "Frankfurt",
@@ -707,6 +771,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/79/55/9c/54/79559c54.png"
         },
         {
+            "id": 64,
             "name": "Perisic",
             "country": "CRO",
             "club": "Inter",
@@ -718,6 +783,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ef/4d/4f/63/ef4d4f63.png"
         },
         {
+            "id": 65,
             "name": "Mandzukic",
             "country": "CRO",
             "club": "Juventus",
@@ -729,6 +795,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fc/83/27/5b/fc83275b.png"
         },
         {
+            "id": 66,
             "name": "Schmeichel",
             "country": "DEN",
             "club": "Leicester",
@@ -740,6 +807,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c5/6a/bd/c8/c56abdc8.png"
         },
         {
+            "id": 67,
             "name": "Dalsgaard",
             "country": "DEN",
             "club": "Brentford",
@@ -751,6 +819,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/00/24/9b/5e/00249b5e.png"
         },
         {
+            "id": 68,
             "name": "Zanka",
             "country": "DEN",
             "club": "Huddersfield",
@@ -762,6 +831,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7b/e0/a9/73/7be0a973.png"
         },
         {
+            "id": 69,
             "name": "Kjaer",
             "country": "DEN",
             "club": "Sevilla",
@@ -773,6 +843,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0e/dc/67/d1/0edc67d1.png"
         },
         {
+            "id": 70,
             "name": "Larsen",
             "country": "DEN",
             "club": "Udinese",
@@ -784,6 +855,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0f/bb/d7/98/0fbbd798.png"
         },
         {
+            "id": 71,
             "name": "Christensen",
             "country": "DEN",
             "club": "Chelsea",
@@ -795,6 +867,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ce/ed/ee/d6/ceedeed6.png"
         },
         {
+            "id": 72,
             "name": "Delaney",
             "country": "DEN",
             "club": "Dortmund",
@@ -806,6 +879,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/32/1d/9f/aa/321d9faa.png"
         },
         {
+            "id": 73,
             "name": "Eriksen",
             "country": "DEN",
             "club": "Tottenham",
@@ -817,6 +891,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/81/bf/59/0d/81bf590d.png"
         },
         {
+            "id": 74,
             "name": "Braithwaite",
             "country": "DEN",
             "club": "Middlesbrough",
@@ -828,6 +903,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f9/5e/fa/20/f95efa20.png"
         },
         {
+            "id": 75,
             "name": "Sisto",
             "country": "DEN",
             "club": "Celta Vigo",
@@ -839,6 +915,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/78/12/3b/8c/78123b8c.png"
         },
         {
+            "id": 76,
             "name": "Poulsen",
             "country": "DEN",
             "club": "Leipzig",
@@ -850,6 +927,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7d/fc/1f/6a/7dfc1f6a.png"
         },
         {
+            "id": 77,
             "name": "Sommer",
             "country": "SUI",
             "club": "Gladbach",
@@ -861,6 +939,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/78/40/6c/a0/78406ca0.png"
         },
         {
+            "id": 78,
             "name": "Lang",
             "country": "SUI",
             "club": "Gladbach",
@@ -872,6 +951,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b9/13/b7/42/b913b742.png"
         },
         {
+            "id": 79,
             "name": "Akanji",
             "country": "SUI",
             "club": "Dortmund",
@@ -883,6 +963,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e8/43/77/82/e8437782.png"
         },
         {
+            "id": 80,
             "name": "Droujou",
             "country": "SUI",
             "club": "SPAL",
@@ -894,6 +975,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/30/27/fc/54/3027fc54.png"
         },
         {
+            "id": 81,
             "name": "Rodriguez",
             "country": "SUI",
             "club": "Milan",
@@ -905,6 +987,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/25/ed/9f/a3/25ed9fa3.png"
         },
         {
+            "id": 82,
             "name": "Xhaka",
             "country": "SUI",
             "club": "Arsenal",
@@ -916,6 +999,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/36/14/68/eb361468.png"
         },
         {
+            "id": 83,
             "name": "Behrami",
             "country": "SUI",
             "club": "Udinese",
@@ -927,6 +1011,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f5/75/d5/3e/f575d53e.png"
         },
         {
+            "id": 84,
             "name": "Dzemaili",
             "country": "SUI",
             "club": "Bologna",
@@ -938,6 +1023,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/9b/91/fd/2c/9b91fd2c.png"
         },
         {
+            "id": 85,
             "name": "Shaqiri",
             "country": "SUI",
             "club": "Liverpool",
@@ -949,6 +1035,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f8/1f/34/d5/f81f34d5.png"
         },
         {
+            "id": 86,
             "name": "Zuber",
             "country": "SUI",
             "club": "Hoffenheim",
@@ -960,6 +1047,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/76/8b/2e/fa/768b2efa.png"
         },
         {
+            "id": 87,
             "name": "Seferovic",
             "country": "SUI",
             "club": "Benfica",
@@ -971,6 +1059,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/2d/a7/46/65/2da74665.png"
         },
         {
+            "id": 88,
             "name": "Lloris",
             "country": "FRA",
             "club": "Tottenham",
@@ -982,6 +1071,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/29/19/07/54/29190754.png"
         },
         {
+            "id": 89,
             "name": "Pavard",
             "country": "FRA",
             "club": "Stuttgart",
@@ -993,6 +1083,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/06/59/3a/4a/06593a4a.png"
         },
         {
+            "id": 90,
             "name": "Umtiti",
             "country": "FRA",
             "club": "Barcelona",
@@ -1004,6 +1095,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5c/d0/d0/67/5cd0d067.png"
         },
         {
+            "id": 91,
             "name": "Varane",
             "country": "FRA",
             "club": "Real Madrid",
@@ -1015,6 +1107,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f2/ac/b7/90/f2acb790.png"
         },
         {
+            "id": 92,
             "name": "Hernandez",
             "country": "FRA",
             "club": "Atletico",
@@ -1026,6 +1119,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8e/f3/fc/38/8ef3fc38.png"
         },
         {
+            "id": 93,
             "name": "Kante",
             "country": "FRA",
             "club": "Chelsea",
@@ -1037,6 +1131,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/71/95/bf/bc/7195bfbc.png"
         },
         {
+            "id": 94,
             "name": "Pogba",
             "country": "FRA",
             "club": "Man Utd",
@@ -1048,6 +1143,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a6/67/4b/05/a6674b05.png"
         },
         {
+            "id": 95,
             "name": "Matuidi",
             "country": "FRA",
             "club": "Juventus",
@@ -1059,6 +1155,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ae/a7/9b/2e/aea79b2e.png"
         },
         {
+            "id": 96,
             "name": "Mbappe",
             "country": "FRA",
             "club": "PSG",
@@ -1070,6 +1167,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/d4/b3/4f/d1/d4b34fd1.png"
         },
         {
+            "id": 97,
             "name": "Griezmann",
             "country": "FRA",
             "club": "Atletico",
@@ -1081,6 +1179,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/25/e0/35/5a/25e0355a.png"
         },
         {
+            "id": 98,
             "name": "Giroud",
             "country": "FRA",
             "club": "Chelsea",
@@ -1092,6 +1191,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/97/2c/9b/e4/972c9be4.png"
         },
         {
+            "id": 99,
             "name": "Kawashima",
             "country": "JPA",
             "club": "Strasbourg",
@@ -1103,6 +1203,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/1b/34/8e/fb/1b348efb.png"
         },
         {
+            "id": 100,
             "name": "Sakai",
             "country": "JPA",
             "club": "Marseille",
@@ -1114,6 +1215,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dc/47/82/5c/dc47825c.png"
         },
         {
+            "id": 101,
             "name": "Shoji",
             "country": "JPA",
             "club": "Kashima",
@@ -1125,6 +1227,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3f/54/bc/07/3f54bc07.png"
         },
         {
+            "id": 102,
             "name": "Yoshida",
             "country": "JPA",
             "club": "Southampton",
@@ -1136,6 +1239,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f6/f1/47/03/f6f14703.png"
         },
         {
+            "id": 103,
             "name": "Nagatomo",
             "country": "JPA",
             "club": "Galatasaray",
@@ -1147,6 +1251,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/91/0a/16/89/910a1689.png"
         },
         {
+            "id": 104,
             "name": "Hasebe",
             "country": "JPA",
             "club": "Frankfurt",
@@ -1158,6 +1263,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/cf/8a/8a/b0/cf8a8ab0.png"
         },
         {
+            "id": 105,
             "name": "Shibasaki",
             "country": "JPA",
             "club": "Getafe",
@@ -1169,6 +1275,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f3/e2/14/05/f3e21405.png"
         },
         {
+            "id": 106,
             "name": "Kagawa",
             "country": "JPA",
             "club": "Dortmund",
@@ -1180,6 +1287,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3e/26/26/da/3e2626da.png"
         },
         {
+            "id": 107,
             "name": "Haraguchi",
             "country": "JPA",
             "club": "Hannover",
@@ -1191,6 +1299,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/36/cc/63/34/36cc6334.png"
         },
         {
+            "id": 108,
             "name": "Inui",
             "country": "JPA",
             "club": "Betis",
@@ -1202,6 +1311,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/85/23/86/97/85238697.png"
         },
         {
+            "id": 109,
             "name": "Osako",
             "country": "JPA",
             "club": "Bremen",
@@ -1213,6 +1323,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/9a/48/6a/6d/9a486a6d.png"
         },
         {
+            "id": 110,
             "name": "Ochoa",
             "country": "MEX",
             "club": "Standard",
@@ -1224,6 +1335,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a2/c5/bc/68/a2c5bc68.png"
         },
         {
+            "id": 111,
             "name": "Layun",
             "country": "MEX",
             "club": "Villarreal",
@@ -1235,6 +1347,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/34/f4/0b/81/34f40b81.png"
         },
         {
+            "id": 112,
             "name": "Salcedo",
             "country": "MEX",
             "club": "Frankfurt",
@@ -1246,6 +1359,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/10/83/f6/26/1083f626.png"
         },
         {
+            "id": 113,
             "name": "Ayala",
             "country": "MEX",
             "club": "UNAL",
@@ -1257,6 +1371,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/cf/e2/98/09/cfe29809.png"
         },
         {
+            "id": 114,
             "name": "Gallardo",
             "country": "MEX",
             "club": "Monterrey",
@@ -1268,6 +1383,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8f/57/56/9e/8f57569e.png"
         },
         {
+            "id": 115,
             "name": "Marquez",
             "country": "MEX",
             "club": "Atlas",
@@ -1279,6 +1395,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/d5/76/de/47/d576de47.png"
         },
         {
+            "id": 116,
             "name": "Guardado",
             "country": "MEX",
             "club": "Betis",
@@ -1290,6 +1407,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f8/22/af/41/f822af41.png"
         },
         {
+            "id": 117,
             "name": "Herrera",
             "country": "MEX",
             "club": "Porto",
@@ -1301,6 +1419,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/58/45/6e/ec/58456eec.png"
         },
         {
+            "id": 118,
             "name": "Vela",
             "country": "MEX",
             "club": "Los Angeles",
@@ -1312,6 +1431,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fa/b0/d0/cc/fab0d0cc.png"
         },
         {
+            "id": 119,
             "name": "Lozano",
             "country": "MEX",
             "club": "PSV",
@@ -1323,6 +1443,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/42/28/18/be/422818be.png"
         },
         {
+            "id": 120,
             "name": "Chicharito",
             "country": "MEX",
             "club": "West Ham",
@@ -1334,6 +1455,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fc/7e/42/8f/fc7e428f.png"
         },
         {
+            "id": 121,
             "name": "Rui Patricio",
             "country": "POR",
             "club": "Wolves",
@@ -1345,6 +1467,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/16/78/ec/0d/1678ec0d.png"
         },
         {
+            "id": 122,
             "name": "Cedric",
             "country": "POR",
             "club": "Southampton",
@@ -1356,6 +1479,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/62/9f/14/04/629f1404.png"
         },
         {
+            "id": 123,
             "name": "Pepe",
             "country": "POR",
             "club": "Besiktas",
@@ -1367,6 +1491,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/1c/3e/74/25/1c3e7425.png"
         },
         {
+            "id": 124,
             "name": "Fonte",
             "country": "POR",
             "club": "Lille",
@@ -1378,6 +1503,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c2/43/15/8e/c243158e.png"
         },
         {
+            "id": 125,
             "name": "Guerreiro",
             "country": "POR",
             "club": "Dortmund",
@@ -1389,6 +1515,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dd/f0/a2/2a/ddf0a22a.png"
         },
         {
+            "id": 126,
             "name": "W.Carvalho",
             "country": "POR",
             "club": "Betis",
@@ -1400,6 +1527,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/85/75/8c/0d/85758c0d.png"
         },
         {
+            "id": 127,
             "name": "Moutinho",
             "country": "POR",
             "club": "Wolves",
@@ -1411,6 +1539,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/83/ea/23/3a/83ea233a.png"
         },
         {
+            "id": 128,
             "name": "B.Silva",
             "country": "POR",
             "club": "Man City",
@@ -1422,6 +1551,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/d2/eb/40/86d2eb40.png"
         },
         {
+            "id": 129,
             "name": "Guedes",
             "country": "POR",
             "club": "Valencia",
@@ -1433,6 +1563,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bf/43/e4/73/bf43e473.png"
         },
         {
+            "id": 130,
             "name": "C.Ronaldo",
             "country": "POR",
             "club": "Juventus",
@@ -1444,6 +1575,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b1/36/ce/cf/b136cecf.png"
         },
         {
+            "id": 131,
             "name": "A.Silva",
             "country": "POR",
             "club": "Sevilla",
@@ -1455,6 +1587,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bc/83/69/76/bc836976.png"
         },
         {
+            "id": 132,
             "name": "Akinfeev",
             "country": "RUS",
             "club": "CSKA",
@@ -1466,6 +1599,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/09/7d/2f/dd/097d2fdd.png"
         },
         {
+            "id": 133,
             "name": "M.Fernandes",
             "country": "RUS",
             "club": "CSKA",
@@ -1477,6 +1611,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4e/dd/5c/01/4edd5c01.png"
         },
         {
+            "id": 134,
             "name": "Ignashevich",
             "country": "RUS",
             "club": "CSKA",
@@ -1488,6 +1623,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/41/68/2d/63/41682d63.png"
         },
         {
+            "id": 135,
             "name": "Kutepov",
             "country": "RUS",
             "club": "Spartak",
@@ -1499,6 +1635,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4f/ef/9d/e7/4fef9de7.png"
         },
         {
+            "id": 136,
             "name": "Zhirkov",
             "country": "RUS",
             "club": "Zenit",
@@ -1510,6 +1647,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/73/a8/be/6e/73a8be6e.png"
         },
         {
+            "id": 137,
             "name": "Gazinsky",
             "country": "RUS",
             "club": "Krasnodar",
@@ -1521,6 +1659,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4a/f2/2b/c4/4af22bc4.png"
         },
         {
+            "id": 138,
             "name": "Zobnin",
             "country": "RUS",
             "club": "Spartak",
@@ -1532,6 +1671,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3f/b8/91/44/3fb89144.png"
         },
         {
+            "id": 139,
             "name": "Golovin",
             "country": "RUS",
             "club": "Monaco",
@@ -1543,6 +1683,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c1/87/34/9a/c187349a.png"
         },
         {
+            "id": 140,
             "name": "Samedov",
             "country": "RUS",
             "club": "Spartak",
@@ -1554,6 +1695,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/23/0c/11/f7/230c11f7.png"
         },
         {
+            "id": 141,
             "name": "Cheryshev",
             "country": "RUS",
             "club": "Valencia",
@@ -1565,6 +1707,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f7/e9/49/24/f7e94924.png"
         },
         {
+            "id": 142,
             "name": "Dzyuba",
             "country": "RUS",
             "club": "Zenit",
@@ -1576,6 +1719,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ba/17/cb/6f/ba17cb6f.png"
         },
         {
+            "id": 143,
             "name": "De Gea",
             "country": "ESP",
             "club": "Man Utd",
@@ -1587,6 +1731,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b6/2b/ee/11/b62bee11.png"
         },
         {
+            "id": 144,
             "name": "Carvajal",
             "country": "ESP",
             "club": "Real Madrid",
@@ -1598,6 +1743,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8f/62/bc/54/8f62bc54.png"
         },
         {
+            "id": 145,
             "name": "Ramos",
             "country": "ESP",
             "club": "Real Madrid",
@@ -1609,6 +1755,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a1/bb/97/12/a1bb9712.png"
         },
         {
+            "id": 146,
             "name": "Pique",
             "country": "ESP",
             "club": "Barcelona",
@@ -1620,6 +1767,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/dc/f5/41/86dcf541.png"
         },
         {
+            "id": 147,
             "name": "J.Alba",
             "country": "ESP",
             "club": "Barcelona",
@@ -1631,6 +1779,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/10/ee/2d/3a/10ee2d3a.png"
         },
         {
+            "id": 148,
             "name": "Busquets",
             "country": "ESP",
             "club": "Barcelona",
@@ -1642,6 +1791,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4b/12/ae/ec/4b12aeec.png"
         },
         {
+            "id": 149,
             "name": "Koke",
             "country": "ESP",
             "club": "Atletico",
@@ -1653,6 +1803,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ea/4c/0f/27/ea4c0f27.png"
         },
         {
+            "id": 150,
             "name": "D.Silva",
             "country": "ESP",
             "club": "Man City",
@@ -1664,6 +1815,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c0/c3/e1/e3/c0c3e1e3.png"
         },
         {
+            "id": 151,
             "name": "Isco",
             "country": "ESP",
             "club": "Real Madrid",
@@ -1675,6 +1827,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/83/d1/58/a6/83d158a6.png"
         },
         {
+            "id": 152,
             "name": "Asensio",
             "country": "ESP",
             "club": "Real Madrid",
@@ -1686,6 +1839,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/96/83/65/24/96836524.png"
         },
         {
+            "id": 153,
             "name": "D.Costa",
             "country": "ESP",
             "club": "Atletico",
@@ -1697,6 +1851,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/d8/5b/2c/23/d85b2c23.png"
         },
         {
+            "id": 154,
             "name": "Olsen",
             "country": "SWE",
             "club": "Roma",
@@ -1708,6 +1863,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/24/2d/e7/a2/242de7a2.png"
         },
         {
+            "id": 155,
             "name": "Lustig",
             "country": "SWE",
             "club": "Celtic",
@@ -1719,6 +1875,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0d/ca/d3/01/0dcad301.png"
         },
         {
+            "id": 156,
             "name": "Granqvist",
             "country": "SWE",
             "club": "Helsingborgs",
@@ -1730,6 +1887,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/38/c9/29/3b/38c9293b.png"
         },
         {
+            "id": 157,
             "name": "Lindelhof",
             "country": "SWE",
             "club": "Man Utd",
@@ -1741,6 +1899,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c2/0e/8f/95/c20e8f95.png"
         },
         {
+            "id": 158,
             "name": "Augustinsson",
             "country": "SWE",
             "club": "Bremen",
@@ -1752,6 +1911,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bb/42/1c/ba/bb421cba.png"
         },
         {
+            "id": 159,
             "name": "Claesson",
             "country": "SWE",
             "club": "Krasnodar",
@@ -1763,6 +1923,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dc/a5/3f/8b/dca53f8b.png"
         },
         {
+            "id": 160,
             "name": "Ekdal",
             "country": "SWE",
             "club": "Sampdoria",
@@ -1774,6 +1935,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/43/1a/3e/82431a3e.png"
         },
         {
+            "id": 161,
             "name": "Larsson",
             "country": "SWE",
             "club": "AIK",
@@ -1785,6 +1947,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/6a/9f/81/e5/6a9f81e5.png"
         },
         {
+            "id": 162,
             "name": "Forsberg",
             "country": "SWE",
             "club": "Leipzig",
@@ -1796,6 +1959,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7f/6a/07/08/7f6a0708.png"
         },
         {
+            "id": 163,
             "name": "Berg",
             "country": "SWE",
             "club": "Al Ain",
@@ -1807,6 +1971,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ea/d3/58/b3/ead358b3.png"
         },
         {
+            "id": 164,
             "name": "Toivonen",
             "country": "SWE",
             "club": "Melbourne",
@@ -1818,6 +1983,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/8a/1c/e3/868a1ce3.png"
         },
         {
+            "id": 165,
             "name": "Muslera",
             "country": "URU",
             "club": "Galatasaray",
@@ -1829,6 +1995,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e8/6a/ad/29/e86aad29.png"
         },
         {
+            "id": 166,
             "name": "Caceres",
             "country": "URU",
             "club": "Lazio",
@@ -1840,6 +2007,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/29/a9/04/24/29a90424.png"
         },
         {
+            "id": 167,
             "name": "Godin",
             "country": "URU",
             "club": "Atletico",
@@ -1851,6 +2019,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/97/93/f0/a5/9793f0a5.png"
         },
         {
+            "id": 168,
             "name": "Gimenez",
             "country": "URU",
             "club": "Atletico",
@@ -1862,6 +2031,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/24/f3/3a/57/24f33a57.png"
         },
         {
+            "id": 169,
             "name": "Laxalt",
             "country": "URU",
             "club": "Milan",
@@ -1873,6 +2043,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/52/e1/f4/ef/52e1f4ef.png"
         },
         {
+            "id": 170,
             "name": "Torreira",
             "country": "URU",
             "club": "Arsenal",
@@ -1884,6 +2055,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/2b/10/2e/a9/2b102ea9.png"
         },
         {
+            "id": 171,
             "name": "Vecino",
             "country": "URU",
             "club": "Inter",
@@ -1895,6 +2067,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b5/6b/4d/43/b56b4d43.png"
         },
         {
+            "id": 172,
             "name": "Nandez",
             "country": "URU",
             "club": "Boca Juniors",
@@ -1906,6 +2079,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0b/0a/1f/c7/0b0a1fc7.png"
         },
         {
+            "id": 173,
             "name": "Bentancur",
             "country": "URU",
             "club": "Juventus",
@@ -1917,6 +2091,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/1d/20/21/2e/1d20212e.png"
         },
         {
+            "id": 174,
             "name": "Suarez",
             "country": "URU",
             "club": "Barcelona",
@@ -1928,6 +2103,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c4/e4/ba/fd/c4e4bafd.png"
         },
         {
+            "id": 175,
             "name": "Cavani",
             "country": "URU",
             "club": "PSG",
@@ -1941,6 +2117,7 @@ module.exports = {
     ],
     functional: [
         {
+            "id": 0,
             "name": "Yellow Card",
             "who_applies_to": "Opposition",
             "attack": null,
@@ -1951,9 +2128,10 @@ module.exports = {
             "for_total_defence": true,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/bc/5d/18/47/bc5d1847.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/bc/5d/18/47/bc5d1847.png"
         },
         {
+            "id": 1,
             "name": "Red Card",
             "who_applies_to": "Opposition",
             "attack": -10,
@@ -1964,9 +2142,10 @@ module.exports = {
             "for_total_defence": true,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/79/51/3d/6a/79513d6a.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/79/51/3d/6a/79513d6a.png"
         },
         {
+            "id": 2,
             "name": "Corner",
             "who_applies_to": "My team",
             "attack": 5,
@@ -1977,9 +2156,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/1f/ab/8e/b3/1fab8eb3.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/1f/ab/8e/b3/1fab8eb3.png"
         },
         {
+            "id": 3,
             "name": "Penalty",
             "who_applies_to": "My team",
             "attack": 10,
@@ -1990,9 +2170,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/e2/95/09/e0/e29509e0.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/e2/95/09/e0/e29509e0.png"
         },
         {
+            "id": 4,
             "name": "Free Kick",
             "who_applies_to": "My team",
             "attack": 7,
@@ -2003,9 +2184,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/34/f9/3a/c3/34f93ac3.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/34/f9/3a/c3/34f93ac3.png"
         },
         {
+            "id": 5,
             "name": "Counter Attack",
             "who_applies_to": "My team",
             "attack": 7,
@@ -2016,9 +2198,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/67/55/15/82675515.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/67/55/15/82675515.png"
         },
         {
+            "id": 6,
             "name": "Tap In",
             "who_applies_to": "My team",
             "attack": 5,
@@ -2029,9 +2212,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/17/49/1e/b8/17491eb8.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/17/49/1e/b8/17491eb8.png"
         },
         {
+            "id": 7,
             "name": "Target Man",
             "who_applies_to": "My team",
             "attack": 5,
@@ -2042,9 +2226,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/0d/cf/b8/69/0dcfb869.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/0d/cf/b8/69/0dcfb869.png"
         },
         {
+            "id": 8,
             "name": "Park the Bus",
             "who_applies_to": "My team",
             "attack": null,
@@ -2055,9 +2240,10 @@ module.exports = {
             "for_total_defence": true,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/59/ce/90/07/59ce9007.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/59/ce/90/07/59ce9007.png"
         },
         {
+            "id": 9,
             "name": "Ultra Attack",
             "who_applies_to": "My team",
             "attack": 10,
@@ -2068,9 +2254,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/e6/e6/a2/74/e6e6a274.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/e6/e6/a2/74/e6e6a274.png"
         },
         {
+            "id": 10,
             "name": "Heavy Rain",
             "who_applies_to": "All",
             "attack": 3,
@@ -2081,9 +2268,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": "Dribbling",
             "defence_special_trait_2": "Ball control",
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/5f/7a/b3/73/5f7ab373.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/5f/7a/b3/73/5f7ab373.png"
         },
         {
+            "id": 11,
             "name": "Disaster",
             "who_applies_to": "All",
             "attack": "-all",
@@ -2094,9 +2282,10 @@ module.exports = {
             "for_total_defence": true,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/f6/8a/5c/bd/f68a5cbd.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/f6/8a/5c/bd/f68a5cbd.png"
         },
         {
+            "id": 12,
             "name": "Melee",
             "who_applies_to": "All",
             "attack": -10,
@@ -2107,9 +2296,10 @@ module.exports = {
             "for_total_defence": true,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/f7/c6/f1/6f/f7c6f16f.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/f7/c6/f1/6f/f7c6f16f.png"
         },
         {
+            "id": 13,
             "name": "Tiki Taka",
             "who_applies_to": "My team",
             "attack": 8,
@@ -2120,9 +2310,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/ac/4e/52/1f/ac4e521f.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/ac/4e/52/1f/ac4e521f.png"
         },
         {
+            "id": 14,
             "name": "Physical Game",
             "who_applies_to": "All",
             "attack": -3,
@@ -2133,9 +2324,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": "Strength",
             "defence_special_trait_2": "Tackling",
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/6b/c3/eb/0e/6bc3eb0e.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/6b/c3/eb/0e/6bc3eb0e.png"
         },
         {
+            "id": 15,
             "name": "Show",
             "who_applies_to": "All",
             "attack": 2,
@@ -2146,9 +2338,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": "not null",
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/31/67/42/9e/3167429e.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/31/67/42/9e/3167429e.png"
         },
         {
+            "id": 16,
             "name": "Joga Bonito",
             "who_applies_to": "All",
             "attack": 10,
@@ -2159,9 +2352,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/aa/ab/29/e4/aaab29e4.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/aa/ab/29/e4/aaab29e4.png"
         },
         {
+            "id": 17,
             "name": "Fog",
             "who_applies_to": "All",
             "attack": 10,
@@ -2172,9 +2366,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": null,
             "defence_special_trait_2": null,
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/c6/09/e4/e5/c609e4e5.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/c6/09/e4/e5/c609e4e5.png"
         },
         {
+            "id": 18,
             "name": "Flying High",
             "who_applies_to": "My team",
             "attack": null,
@@ -2185,9 +2380,10 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": "Diving",
             "defence_special_trait_2": "Reflexes",
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/99/ab/b3/34/99abb334.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/99/ab/b3/34/99abb334.png"
         },
         {
+            "id": 19,
             "name": "Slippery",
             "who_applies_to": "Opposition",
             "attack": null,
@@ -2198,11 +2394,12 @@ module.exports = {
             "for_total_defence": false,
             "defence_special_trait_1": "Diving",
             "defence_special_trait_2": "Reflexes",
-            "url": "https://hearthcards.ams3.digitaloceanspaces.com/9b/12/0c/a9/9b120ca9.png" 
+            "url": "https://hearthcards.ams3.digitaloceanspaces.com/9b/12/0c/a9/9b120ca9.png"
         }
     ],
     heroes: [
         {
+            "id": 0,
             "name": "Deschamps",
             "country": "FRA",
             "attack": 3,
@@ -2213,6 +2410,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a0/0c/3f/e0/a00c3fe0.png"
         },
         {
+            "id": 1,
             "name": "Lopetegui",
             "country": "ESP",
             "attack": -2,
@@ -2223,6 +2421,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a9/03/a8/cb/a903a8cb.png"
         },
         {
+            "id": 2,
             "name": "Martinez",
             "country": "BEL",
             "attack": 3,
@@ -2233,6 +2432,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3e/4f/39/2d/3e4f392d.png"
         },
         {
+            "id": 3,
             "name": "Dalic",
             "country": "CRO",
             "attack": 3,
@@ -2243,6 +2443,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/67/ad/f4/96/67adf496.png"
         },
         {
+            "id": 4,
             "name": "Southgate",
             "country": "ENG",
             "attack": 2,
@@ -2253,6 +2454,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e1/be/a4/60/e1bea460.png"
         },
         {
+            "id": 5,
             "name": "Andersson",
             "country": "SWE",
             "attack": 2,
@@ -2263,6 +2465,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8f/5d/9e/37/8f5d9e37.png"
         },
         {
+            "id": 6,
             "name": "Cherchesov",
             "country": "RUS",
             "attack": 3,
@@ -2273,6 +2476,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8d/b6/56/b2/8db656b2.png"
         },
         {
+            "id": 7,
             "name": "Tabarez",
             "country": "URU",
             "attack": 2,
@@ -2283,6 +2487,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ce/7b/63/1f/ce7b631f.png"
         },
         {
+            "id": 8,
             "name": "Tite",
             "country": "BRA",
             "attack": 1,
@@ -2293,6 +2498,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/04/56/26/ea/045626ea.png"
         },
         {
+            "id": 9,
             "name": "Sampaoli",
             "country": "ARG",
             "attack": 1,
@@ -2303,6 +2509,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f3/a3/63/b0/f3a363b0.png"
         },
         {
+            "id": 10,
             "name": "F.Santos",
             "country": "POR",
             "attack": 2,
@@ -2313,6 +2520,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/97/3a/4f/fa/973a4ffa.png"
         },
         {
+            "id": 11,
             "name": "Osorio",
             "country": "MEX",
             "attack": 2,
@@ -2323,6 +2531,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a9/d5/a8/40/a9d5a840.png"
         },
         {
+            "id": 12,
             "name": "Nishino",
             "country": "JPA",
             "attack": 2,
@@ -2333,6 +2542,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/95/32/f8/c5/9532f8c5.png"
         },
         {
+            "id": 13,
             "name": "Hareide",
             "country": "DEN",
             "attack": 1,
@@ -2343,6 +2553,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fa/24/f7/aa/fa24f7aa.png"
         },
         {
+            "id": 14,
             "name": "Petkovic",
             "country": "SUI",
             "attack": 2,
@@ -2353,6 +2564,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4c/8a/c8/16/4c8ac816.png"
         },
         {
+            "id": 15,
             "name": "Pekerman",
             "country": "COL",
             "attack": 2,
@@ -2363,6 +2575,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f5/83/38/d8/f58338d8.png"
         },
         {
+            "id": 16,
             "name": "Zidane",
             "country": "FRA",
             "attack": 1,
@@ -2373,6 +2586,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/96/59/6e/b4/96596eb4.png"
         },
         {
+            "id": 17,
             "name": "Putin",
             "country": "RUS",
             "attack": 7,
@@ -2383,6 +2597,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ee/6d/15/84/ee6d1584.png"
         },
         {
+            "id": 18,
             "name": "Pochettino",
             "country": "ARG",
             "attack": 1,
@@ -2393,6 +2608,7 @@ module.exports = {
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/45/84/fe/b8/4584feb8.png"
         },
         {
+            "id": 19,
             "name": "Sir Alex Ferguson",
             "country": null,
             "attack": null,
