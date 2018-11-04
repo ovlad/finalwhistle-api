@@ -131,6 +131,7 @@ let checkCurrentPlayerStatus = username => {
 
             if (allReady) {
                 io.emit('all_players_ready');
+                io.emit('round', roundsInfo);
                 turn(0);
             }
         }
