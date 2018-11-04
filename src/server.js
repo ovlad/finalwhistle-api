@@ -35,6 +35,70 @@ app.use((req, res, next) => {
 let players = {};
 let currentPlayerUsername;
 let currentPlayerIndex;
+let roundsInfo = {
+    roundsWinner: {
+        '1': null,
+        '2': null,
+        '3': null
+    },
+    current_round: 1,
+    is_ending: false,
+    winner: null
+};
+
+// choose a random card from player board
+let chooseRandomCard = player => {
+    let playerInfo = players[player];
+    let row = Math.floor(Math.random() * 4);
+
+    if (row === 0) { // goalkeeper
+        if (playerInfo.board.goalkeeper.card) {
+            return {
+                position: 'GOALKEEPER',
+                index: null,
+                card: playerInfo.board.goalkeeper.card
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    } else if (row === 1) { // defence
+        if (playerInfo.board.defence.cards.length) {
+            let index = Math.floor(Math.random() * playerInfo.board.defence.cards.length);
+
+            return {
+                position: 'DEFENCE',
+                index: index,
+                card: playerInfo.board.defence.cards[index]
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    } else if (row === 2) { // mid
+        if (playerInfo.board.mid.cards.length) {
+            let index = Math.floor(Math.random() * playerInfo.board.mid.cards.length);
+
+            return {
+                position: 'MID',
+                index: index,
+                card: playerInfo.board.mid.cards[index]
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    } else { // attack
+        if (playerInfo.board.attack.cards.length) {
+            let index = Math.floor(Math.random() * playerInfo.board.attack.cards.length);
+
+            return {
+                position: 'ATTACK',
+                index: index,
+                card: playerInfo.board.attack.cards[index]
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    }
+};
 
 // change current player turn based on player index
 let turn = (usernameIndex) => {
@@ -61,6 +125,8 @@ let checkCurrentPlayerStatus = username => {
                         allReady = false;
                     }
                 });
+            } else {
+                allReady = false;
             }
 
             if (allReady) {
@@ -285,14 +351,9 @@ app.post('/play_card', (req, res) => {
         }
     }
 
-
     if (cardType === 'M') {
-        console.log(players[username].cards.minions.findIndex(c => c.id === cardId));
-
         // remove card from player's hand
         players[username].cards.minions.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
-
-
 
         // add card to the board
         if (position === 'goalkeeper') {
@@ -307,7 +368,6 @@ app.post('/play_card', (req, res) => {
         // do something
         // ...
     }
-
 
     // respond
     res.json(response.success(true));
@@ -335,6 +395,56 @@ app.post('/end_turn', (req, res) => {
 
     // respond
     res.json(response.success(true));
+});
+
+app.post('/end_round', (req, res) => {
+    let body = req.body || {};
+
+    // params
+    let username = body.username;
+
+    if (_.isUndefined(username)) {
+        res.json(response.error('invalid_params', 'Missing `username` param'));
+        return;
+    }
+
+    if (!_.isString(username) || _.isUndefined(players[username])) {
+        res.json(response.error('invalid_params', 'Invalid `username` param'));
+        return;
+    }
+
+    if (!roundsInfo.is_ending) {
+        roundsInfo.is_ending = true;
+    } else {
+        roundsInfo.is_ending = false;
+
+        // find current round winner;
+        // TODO: determine winner username by comparing players total points
+        let winnerUsername = Object.keys(players)[Math.floor(Math.random() * 2)];
+
+        // set current round winner;
+        roundsInfo.roundsWinner[roundsInfo.current_round] = winnerUsername;
+        players[winnerUsername].noWins++;
+
+        // if this was the last round => end game
+        if (roundsInfo.current_round === 3) {
+            // set winner
+            let playersUsername = Object.keys(players);
+
+            if (players[playersUsername[0]].noWins > players[playersUsername[1]].noWins) { // first player won
+                roundsInfo.winner = playersUsername[0];
+            } else { // second player won
+                roundsInfo.winner = playersUsername[1];
+            }
+        } else {
+            roundsInfo.current_round++;
+        }
+    }
+
+    // respond
+    res.json(response.success(true));
+
+    io.emit('round', roundsInfo);
 });
 
 app.post('*', (req, res) => {
@@ -408,7 +518,8 @@ io.on('connection', socket => {
             },
             totalPoints: 0,
             isReady: false,
-            myTurn: false
+            myTurn: false,
+            noWins: 0
         };
 
         // send to the player all the current players information the server knows

@@ -164,7 +164,7 @@ https://finalwhistle-api.herokuapp.com/
   | username  | string  | the username        | YES       |
   | card_type      | string | the card type (possible values: **M** for minion card, **F** for functional card)| YES       |
   | card_id      | integer | the card id | YES       |
-  | position      | string | the card play position (possible values: **GAOLKEEPER**, **DEFENCE**, **MID** and **ATTACK**) | NO if card_type is **F**, YES otherwise       |
+  | position      | string | the card play position (possible values: **GOALKEEPER**, **DEFENCE**, **MID** and **ATTACK**) | NO if card_type is **F**, YES otherwise       |
   
   _request body example_
   ```json
@@ -198,7 +198,7 @@ https://finalwhistle-api.herokuapp.com/
   _request body example_
   ```json
   {
-    "username": "john",
+    "username": "john"
   }
   ```
   

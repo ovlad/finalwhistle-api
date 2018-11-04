@@ -55,3 +55,7 @@ socket.on('turn', username => {
 socket.on('gameplay', players => {
     console.log('current game/players status is: ', util.inspect(players, false, null));
 });
+
+socket.on('round', roundsInfo => {
+    console.log('ROUNDS INFO: ', util.inspect(roundsInfo, false, null));
+});
