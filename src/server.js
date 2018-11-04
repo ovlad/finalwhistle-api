@@ -37,9 +37,9 @@ let currentPlayerUsername;
 let currentPlayerIndex;
 let roundsInfo = {
     roundsWinner: {
-        '1': null,
-        '2': null,
-        '3': null
+        'round_1': null,
+        'round_2': null,
+        'round_3': null
     },
     current_round: 1,
     is_ending: false,
@@ -423,7 +423,13 @@ app.post('/end_round', (req, res) => {
         let winnerUsername = Object.keys(players)[Math.floor(Math.random() * 2)];
 
         // set current round winner;
-        roundsInfo.roundsWinner[roundsInfo.current_round] = winnerUsername;
+        if (roundsInfo.current_round === 1) {
+            roundsInfo.roundsWinner.round_1 = winnerUsername;
+        } else if (roundsInfo.current_round === 2) {
+            roundsInfo.roundsWinner.round_2 = winnerUsername;
+        } else {
+            roundsInfo.roundsWinner.round_3 = winnerUsername;
+        }
         players[winnerUsername].noWins++;
 
         // if this was the last round => end game
