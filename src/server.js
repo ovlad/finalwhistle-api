@@ -120,12 +120,12 @@ let applyFunctionalCard = (username, functionalCard) => {
             } else {
                 playerCardInfo.card.bonus_defence = functionalCard.defence;
             }
-            playerCardInfo.card.defence += functionalCard.defence;
+            playerCardInfo.card.defense += functionalCard.defence;
         }
 
         if (playerCardInfo.position === 'GOALKEEPER') {
             players[username].board.goalkeeper.card = playerCardInfo.card;
-            players[username].board.goalkeeper.score = playerCardInfo.card.attack + playerCardInfo.card.defence;
+            players[username].board.goalkeeper.score = playerCardInfo.card.attack + playerCardInfo.card.defense;
         } else {
             players[username].board[playerCardInfo.position.toLowerCase()].cards[playerCardInfo.index] = playerCardInfo.card;
             players[username].board[playerCardInfo.position.toLowerCase()].score += ((functionalCard.attack || 0) + (functionalCard.defence || 0));
@@ -149,7 +149,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                         players[username].board.goalkeeper.card.attack += functionalCard.attack;
 
                         // update goalkeeper score
-                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defense;
                         players[username].totalPoints += functionalCard.attack;
                     }
 
@@ -214,7 +214,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                         players[username].board.goalkeeper.card.attack += functionalCard.attack;
 
                         // update goalkeeper score
-                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defense;
                         players[username].totalPoints += functionalCard.attack;
                     }
 
@@ -276,10 +276,10 @@ let applyFunctionalCard = (username, functionalCard) => {
                         } else {
                             players[username].board.goalkeeper.card.bonus_defence = functionalCard.defence;
                         }
-                        players[username].board.goalkeeper.card.defence += functionalCard.defence;
+                        players[username].board.goalkeeper.card.defense += functionalCard.defence;
 
                         // update goalkeeper score
-                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defense;
                         players[username].totalPoints += functionalCard.defence;
                     }
 
@@ -290,7 +290,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                             } else {
                                 card.bonus_defence = functionalCard.defence;
                             }
-                            card.defence += functionalCard.defence;
+                            card.defense += functionalCard.defence;
                             players[username].board.defence.score += functionalCard.defence;
                             players[username].board.defence.cards[index] = card;
                             players[username].totalPoints += functionalCard.defence;
@@ -304,7 +304,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                             } else {
                                 card.bonus_defence = functionalCard.defence;
                             }
-                            card.defence += functionalCard.defence;
+                            card.defense += functionalCard.defence;
                             players[username].board.mid.score += functionalCard.defence;
                             players[username].board.mid.cards[index] = card;
                             players[username].totalPoints += functionalCard.defence;
@@ -318,7 +318,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                             } else {
                                 card.bonus_defence = functionalCard.defence;
                             }
-                            card.defence += functionalCard.defence;
+                            card.defense += functionalCard.defence;
                             players[username].board.attack.score += functionalCard.defence;
                             players[username].board.attack.cards[index] = card;
                             players[username].totalPoints += functionalCard.defence;
@@ -341,10 +341,10 @@ let applyFunctionalCard = (username, functionalCard) => {
                         } else {
                             players[username].board.goalkeeper.card.bonus_defence = functionalCard.defence;
                         }
-                        players[username].board.goalkeeper.card.defence += functionalCard.defence;
+                        players[username].board.goalkeeper.card.defense += functionalCard.defence;
 
                         // update goalkeeper score
-                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defense;
                         players[username].totalPoints += functionalCard.defence;
                     }
 
@@ -355,7 +355,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                             } else {
                                 card.bonus_defence = functionalCard.defence;
                             }
-                            card.defence += functionalCard.defence;
+                            card.defense += functionalCard.defence;
                             players[username].board.defence.score += functionalCard.defence;
                             players[username].board.defence.cards[index] = card;
                             players[username].totalPoints += functionalCard.defence;
@@ -369,7 +369,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                             } else {
                                 card.bonus_defence = functionalCard.defence;
                             }
-                            card.defence += functionalCard.defence;
+                            card.defense += functionalCard.defence;
                             players[username].board.mid.score += functionalCard.defence;
                             players[username].board.mid.cards[index] = card;
                             players[username].totalPoints += functionalCard.defence;
@@ -383,7 +383,7 @@ let applyFunctionalCard = (username, functionalCard) => {
                             } else {
                                 card.bonus_defence = functionalCard.defence;
                             }
-                            card.defence += functionalCard.defence;
+                            card.defense += functionalCard.defence;
                             players[username].board.attack.score += functionalCard.defence;
                             players[username].board.attack.cards[index] = card;
                             players[username].totalPoints += functionalCard.defence;
@@ -659,42 +659,42 @@ app.post('/play_card', (req, res) => {
         if (players[playersUsername[0]].cards.hero.country) {
             if (card.country === players[playersUsername[0]].cards.hero.country) {
                 card.attack += (players[playersUsername[0]].cards.hero.attack || 0);
-                card.defence += (players[playersUsername[0]].cards.hero.defence || 0);
+                card.defense += (players[playersUsername[0]].cards.hero.defence || 0);
             }
         }
 
         if (players[playersUsername[1]].cards.hero.country) {
             if (card.country === players[playersUsername[1]].cards.hero.country) {
                 card.attack += (players[playersUsername[1]].cards.hero.attack || 0);
-                card.defence += (players[playersUsername[1]].cards.hero.defence || 0);
+                card.defense += (players[playersUsername[1]].cards.hero.defence || 0);
             }
         }
 
         if (players[playersUsername[0]].cards.hero.club) {
             if (card.club === players[playersUsername[0]].cards.hero.club) {
                 card.attack += (players[playersUsername[0]].cards.hero.club_attack || 0);
-                card.defence += (players[playersUsername[0]].cards.hero.club_defence || 0);
+                card.defense += (players[playersUsername[0]].cards.hero.club_defence || 0);
             }
         }
 
         if (players[playersUsername[1]].cards.hero.club) {
             if (card.club === players[playersUsername[1]].cards.hero.club) {
                 card.attack += (players[playersUsername[1]].cards.hero.club_attack || 0);
-                card.defence += (players[playersUsername[1]].cards.hero.club_defence || 0);
+                card.defense += (players[playersUsername[1]].cards.hero.club_defence || 0);
             }
         }
 
         // add card to the board
         if (position === 'goalkeeper') {
             players[username].board.goalkeeper.card = card;
-            players[username].board.goalkeeper.score = ((card.attack || 0) + (card.defence || 0));
+            players[username].board.goalkeeper.score = ((card.attack || 0) + (card.defense || 0));
         } else {
             players[username].board[position].cards.push(allCards.minions[cardId]);
-            players[username].board[position].score += ((card.attack || 0) + (card.defence || 0));
+            players[username].board[position].score += ((card.attack || 0) + (card.defense || 0));
         }
 
         // add tot total points
-        players[username].totalPoints += ((card.attack || 0) + (card.defence || 0));
+        players[username].totalPoints += ((card.attack || 0) + (card.defense || 0));
     } else if (cardType === 'F') {
         // remove card from player's hand
         players[username].cards.functional.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
