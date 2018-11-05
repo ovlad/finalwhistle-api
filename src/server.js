@@ -46,34 +46,88 @@ let roundsInfo = {
     winner: null
 };
 
+// choose a random card from player board
+let chooseRandomCard = player => {
+    let playerInfo = players[player];
+    let row = Math.floor(Math.random() * 4);
+
+    if (row === 0) { // goalkeeper
+        if (playerInfo.board.goalkeeper.card) {
+            return {
+                position: 'GOALKEEPER',
+                index: null,
+                card: playerInfo.board.goalkeeper.card
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    } else if (row === 1) { // defence
+        if (playerInfo.board.defence.cards.length) {
+            let index = Math.floor(Math.random() * playerInfo.board.defence.cards.length);
+
+            return {
+                position: 'DEFENCE',
+                index: index,
+                card: playerInfo.board.defence.cards[index]
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    } else if (row === 2) { // mid
+        if (playerInfo.board.mid.cards.length) {
+            let index = Math.floor(Math.random() * playerInfo.board.mid.cards.length);
+
+            return {
+                position: 'MID',
+                index: index,
+                card: playerInfo.board.mid.cards[index]
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    } else { // attack
+        if (playerInfo.board.attack.cards.length) {
+            let index = Math.floor(Math.random() * playerInfo.board.attack.cards.length);
+
+            return {
+                position: 'ATTACK',
+                index: index,
+                card: playerInfo.board.attack.cards[index]
+            };
+        } else {
+            return chooseRandomCard(player);
+        }
+    }
+};
+
 let applyFunctionalCard = (username, functionalCard) => {
     if (functionalCard.for_total_attack || functionalCard.for_total_defence) {
         // choose a random card from the enemy
         let playerCardInfo = chooseRandomCard(username);
 
         if (functionalCard.for_total_attack) {
-            if (playerCardInfo.bonus_attack) {
-                playerCardInfo.bonus_attack += functionalCard.attack;
+            if (playerCardInfo.card.bonus_attack) {
+                playerCardInfo.card.bonus_attack += functionalCard.attack;
             } else {
-                playerCardInfo.bonus_attack = functionalCard.attack;
+                playerCardInfo.card.bonus_attack = functionalCard.attack;
             }
-            playerCardInfo.attack += functionalCard.attack;
+            playerCardInfo.card.attack += functionalCard.attack;
         }
 
         if (functionalCard.for_total_defence) {
-            if (playerCardInfo.bonus_defence) {
-                playerCardInfo.bonus_defence += functionalCard.defence;
+            if (playerCardInfo.card.bonus_defence) {
+                playerCardInfo.card.bonus_defence += functionalCard.defence;
             } else {
-                playerCardInfo.bonus_defence = functionalCard.defence;
+                playerCardInfo.card.bonus_defence = functionalCard.defence;
             }
-            playerCardInfo.defence += functionalCard.defence;
+            playerCardInfo.card.defence += functionalCard.defence;
         }
 
         if (playerCardInfo.position === 'GOALKEEPER') {
-            players[username].board.goalkeeper.card = playerCardInfo;
-            players[username].board.goalkeeper.score = playerCardInfo.attack + playerCardInfo.defence;
+            players[username].board.goalkeeper.card = playerCardInfo.card;
+            players[username].board.goalkeeper.score = playerCardInfo.card.attack + playerCardInfo.card.defence;
         } else {
-            players[username].board[playerCardInfo.position.toLowerCase()].cards[playerCardInfo.index] = playerCardInfo;
+            players[username].board[playerCardInfo.position.toLowerCase()].cards[playerCardInfo.index] = playerCardInfo.card;
             players[username].board[playerCardInfo.position.toLowerCase()].score += ((functionalCard.attack || 0) + (functionalCard.defence || 0));
         }
 
@@ -341,60 +395,6 @@ let applyFunctionalCard = (username, functionalCard) => {
     }
 };
 
-// choose a random card from player board
-let chooseRandomCard = player => {
-    let playerInfo = players[player];
-    let row = Math.floor(Math.random() * 4);
-
-    if (row === 0) { // goalkeeper
-        if (playerInfo.board.goalkeeper.card) {
-            return {
-                position: 'GOALKEEPER',
-                index: null,
-                card: playerInfo.board.goalkeeper.card
-            };
-        } else {
-            return chooseRandomCard(player);
-        }
-    } else if (row === 1) { // defence
-        if (playerInfo.board.defence.cards.length) {
-            let index = Math.floor(Math.random() * playerInfo.board.defence.cards.length);
-
-            return {
-                position: 'DEFENCE',
-                index: index,
-                card: playerInfo.board.defence.cards[index]
-            };
-        } else {
-            return chooseRandomCard(player);
-        }
-    } else if (row === 2) { // mid
-        if (playerInfo.board.mid.cards.length) {
-            let index = Math.floor(Math.random() * playerInfo.board.mid.cards.length);
-
-            return {
-                position: 'MID',
-                index: index,
-                card: playerInfo.board.mid.cards[index]
-            };
-        } else {
-            return chooseRandomCard(player);
-        }
-    } else { // attack
-        if (playerInfo.board.attack.cards.length) {
-            let index = Math.floor(Math.random() * playerInfo.board.attack.cards.length);
-
-            return {
-                position: 'ATTACK',
-                index: index,
-                card: playerInfo.board.attack.cards[index]
-            };
-        } else {
-            return chooseRandomCard(player);
-        }
-    }
-};
-
 // change current player turn based on player index
 let turn = (usernameIndex) => {
     currentPlayerUsername = Object.keys(players)[usernameIndex];
@@ -658,29 +658,29 @@ app.post('/play_card', (req, res) => {
 
         if (players[playersUsername[0]].cards.hero.country) {
             if (card.country === players[playersUsername[0]].cards.hero.country) {
-                card.attack += players[playersUsername[0]].cards.hero.attack;
-                card.defence += players[playersUsername[0]].cards.hero.defence;
+                card.attack += (players[playersUsername[0]].cards.hero.attack || 0);
+                card.defence += (players[playersUsername[0]].cards.hero.defence || 0);
             }
         }
 
         if (players[playersUsername[1]].cards.hero.country) {
             if (card.country === players[playersUsername[1]].cards.hero.country) {
-                card.attack += players[playersUsername[1]].cards.hero.attack;
-                card.defence += players[playersUsername[1]].cards.hero.defence;
+                card.attack += (players[playersUsername[1]].cards.hero.attack || 0);
+                card.defence += (players[playersUsername[1]].cards.hero.defence || 0);
             }
         }
 
         if (players[playersUsername[0]].cards.hero.club) {
             if (card.club === players[playersUsername[0]].cards.hero.club) {
-                card.attack += players[playersUsername[0]].cards.hero.club_attack;
-                card.defence += players[playersUsername[0]].cards.hero.club_defence;
+                card.attack += (players[playersUsername[0]].cards.hero.club_attack || 0);
+                card.defence += (players[playersUsername[0]].cards.hero.club_defence || 0);
             }
         }
 
         if (players[playersUsername[1]].cards.hero.club) {
             if (card.club === players[playersUsername[1]].cards.hero.club) {
-                card.attack += players[playersUsername[1]].cards.hero.club_attack;
-                card.defence += players[playersUsername[1]].cards.hero.club_defence;
+                card.attack += (players[playersUsername[1]].cards.hero.club_attack || 0);
+                card.defence += (players[playersUsername[1]].cards.hero.club_defence || 0);
             }
         }
 
