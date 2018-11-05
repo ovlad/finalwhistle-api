@@ -10,7 +10,7 @@ module.exports = {
             "position": "GK",
             "cost": 10,
             "attack": 5,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Reflexes",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/22/4c/e2/0c/224ce20c.png"
         },
@@ -22,7 +22,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 8,
-            "defense": 14,
+            "defence": 14,
             "special_trait": "Speed",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b2/c6/3a/4d/b2c63a4d.png"
         },
@@ -34,7 +34,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 6,
-            "defense": 14,
+            "defence": 14,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c1/29/55/94/c1295594.png"
         },
@@ -46,7 +46,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 9,
-            "defense": 12,
+            "defence": 12,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f1/5f/60/d5/f15f60d5.png"
         },
@@ -58,7 +58,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 10,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Free kick",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e0/06/10/8f/e006108f.png"
         },
@@ -70,7 +70,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 8,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/70/af/3d/83/70af3d83.png"
         },
@@ -82,7 +82,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 12,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Playmaker",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5a/fa/3c/6b/5afa3c6b.png"
         },
@@ -94,7 +94,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 11,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f6/50/90/00/f6509000.png"
         },
@@ -106,7 +106,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 10,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/52/e1/5b/14/52e15b14.png"
         },
@@ -118,7 +118,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 16,
-            "defense": 5,
+            "defence": 5,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/97/85/39/82978539.png"
         },
@@ -130,7 +130,7 @@ module.exports = {
             "position": "ATT",
             "cost": 15,
             "attack": 25,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/df/53/57/61/df535761.png"
         },
@@ -142,7 +142,7 @@ module.exports = {
             "position": "GK",
             "cost": 7,
             "attack": 3,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e4/b5/a4/d7/e4b5a4d7.png"
         },
@@ -154,7 +154,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 4,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b5/03/bc/a6/b503bca6.png"
         },
@@ -166,7 +166,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 8,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a1/31/60/be/a13160be.png"
         },
@@ -178,7 +178,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0c/9f/66/35/0c9f6635.png"
         },
@@ -190,7 +190,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 7,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b6/9a/a3/65/b69aa365.png"
         },
@@ -202,7 +202,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 4,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ae/28/74/17/ae287417.png"
         },
@@ -214,7 +214,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 6,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/ae/98/cc/ebae98cc.png"
         },
@@ -226,7 +226,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 7,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4f/c9/cc/c6/4fc9ccc6.png"
         },
@@ -238,7 +238,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 10,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/10/94/a3/8c/1094a38c.png"
         },
@@ -250,7 +250,7 @@ module.exports = {
             "position": "ATT",
             "cost": 15,
             "attack": 25,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/8f/60/2f/868f602f.png"
         },
@@ -262,7 +262,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 16,
-            "defense": 5,
+            "defence": 5,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4c/ca/ac/4d/4ccaac4d.png"
         },
@@ -274,7 +274,7 @@ module.exports = {
             "position": "GK",
             "cost": 12,
             "attack": 6,
-            "defense": 18,
+            "defence": 18,
             "special_trait": "Diving",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/35/fc/fc/23/35fcfc23.png"
         },
@@ -286,7 +286,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 7,
-            "defense": 16,
+            "defence": 16,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/10/09/28/eb100928.png"
         },
@@ -298,7 +298,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 8,
-            "defense": 15,
+            "defence": 15,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0e/5b/98/0d/0e5b980d.png"
         },
@@ -310,7 +310,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 8,
-            "defense": 16,
+            "defence": 16,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f1/46/92/2a/f146922a.png"
         },
@@ -322,7 +322,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 10,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f9/ac/a5/a5/f9aca5a5.png"
         },
@@ -334,7 +334,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 12,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Ball control",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/18/cb/90/bf/18cb90bf.png"
         },
@@ -346,7 +346,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 9,
-            "defense": 12,
+            "defence": 12,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/74/9c/80/09/749c8009.png"
         },
@@ -358,7 +358,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 10,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/47/23/d3/76/4723d376.png"
         },
@@ -370,7 +370,7 @@ module.exports = {
             "position": "ATT",
             "cost": 12,
             "attack": 15,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b6/31/48/c7/b63148c7.png"
         },
@@ -382,7 +382,7 @@ module.exports = {
             "position": "ATT",
             "cost": 13,
             "attack": 19,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/32/96/e4/e8/3296e4e8.png"
         },
@@ -394,7 +394,7 @@ module.exports = {
             "position": "ATT",
             "cost": 12,
             "attack": 20,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5c/30/eb/c0/5c30ebc0.png"
         },
@@ -406,7 +406,7 @@ module.exports = {
             "position": "GK",
             "cost": 11,
             "attack": 6,
-            "defense": 17,
+            "defence": 17,
             "special_trait": "Diving",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8b/81/e1/11/8b81e111.png"
         },
@@ -418,7 +418,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f0/22/63/81/f0226381.png"
         },
@@ -430,7 +430,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 6,
-            "defense": 12,
+            "defence": 12,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ec/05/0a/15/ec050a15.png"
         },
@@ -442,7 +442,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 6,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/33/76/cd/67/3376cd67.png"
         },
@@ -454,7 +454,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 10,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f5/f2/86/78/f5f28678.png"
         },
@@ -466,7 +466,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 6,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/15/e6/c6/7f/15e6c67f.png"
         },
@@ -478,7 +478,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 8,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7c/b9/84/23/7cb98423.png"
         },
@@ -490,7 +490,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 15,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/cd/d3/de/82cdd3de.png"
         },
@@ -502,7 +502,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 14,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4e/68/4e/82/4e684e82.png"
         },
@@ -514,7 +514,7 @@ module.exports = {
             "position": "ATT",
             "cost": 12,
             "attack": 18,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5a/bc/0f/42/5abc0f42.png"
         },
@@ -526,7 +526,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 12,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/65/38/f9/ee/6538f9ee.png"
         },
@@ -538,7 +538,7 @@ module.exports = {
             "position": "GK",
             "cost": 8,
             "attack": 6,
-            "defense": 12,
+            "defence": 12,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dd/ac/a1/78/ddaca178.png"
         },
@@ -550,7 +550,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 8,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/45/12/21/1a/4512211a.png"
         },
@@ -562,7 +562,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/cc/3c/02/72/cc3c0272.png"
         },
@@ -574,7 +574,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 10,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fc/de/62/ed/fcde62ed.png"
         },
@@ -586,7 +586,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 6,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c6/cd/a9/19/c6cda919.png"
         },
@@ -598,7 +598,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 6,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bf/8c/7a/a8/bf8c7aa8.png"
         },
@@ -610,7 +610,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 5,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/80/e8/fd/74/80e8fd74.png"
         },
@@ -622,7 +622,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 13,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Playmaker",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/09/a2/0c/68/09a20c68.png"
         },
@@ -634,7 +634,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 12,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Speed",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e8/5c/1c/0a/e85c1c0a.png"
         },
@@ -646,7 +646,7 @@ module.exports = {
             "position": "ATT",
             "cost": 11,
             "attack": 15,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b0/76/99/2b/b076992b.png"
         },
@@ -658,7 +658,7 @@ module.exports = {
             "position": "ATT",
             "cost": 11,
             "attack": 15,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/99/ac/10/15/99ac1015.png"
         },
@@ -670,7 +670,7 @@ module.exports = {
             "position": "GK",
             "cost": 11,
             "attack": 6,
-            "defense": 17,
+            "defence": 17,
             "special_trait": "Reflexes",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e3/47/77/d7/e34777d7.png"
         },
@@ -682,7 +682,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/00/f4/95/0a/00f4950a.png"
         },
@@ -694,7 +694,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 7,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/53/74/d7/d7/5374d7d7.png"
         },
@@ -706,7 +706,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 8,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/b5/3f/8f/ebb53f8f.png"
         },
@@ -718,7 +718,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/22/dc/69/24/22dc6924.png"
         },
@@ -730,7 +730,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 9,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0b/09/94/6d/0b09946d.png"
         },
@@ -742,7 +742,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 12,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a4/e2/f5/1e/a4e2f51e.png"
         },
@@ -754,7 +754,7 @@ module.exports = {
             "position": "MID",
             "cost": 14,
             "attack": 16,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Playmaker",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f4/82/1b/c6/f4821bc6.png"
         },
@@ -766,7 +766,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 15,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/79/55/9c/54/79559c54.png"
         },
@@ -778,7 +778,7 @@ module.exports = {
             "position": "ATT",
             "cost": 12,
             "attack": 17,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ef/4d/4f/63/ef4d4f63.png"
         },
@@ -790,7 +790,7 @@ module.exports = {
             "position": "ATT",
             "cost": 12,
             "attack": 18,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fc/83/27/5b/fc83275b.png"
         },
@@ -802,7 +802,7 @@ module.exports = {
             "position": "GK",
             "cost": 11,
             "attack": 6,
-            "defense": 17,
+            "defence": 17,
             "special_trait": "Diving",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c5/6a/bd/c8/c56abdc8.png"
         },
@@ -814,7 +814,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/00/24/9b/5e/00249b5e.png"
         },
@@ -826,7 +826,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7b/e0/a9/73/7be0a973.png"
         },
@@ -838,7 +838,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 7,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0e/dc/67/d1/0edc67d1.png"
         },
@@ -850,7 +850,7 @@ module.exports = {
             "position": "DEF",
             "cost": 6,
             "attack": 5,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0f/bb/d7/98/0fbbd798.png"
         },
@@ -862,7 +862,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 6,
-            "defense": 12,
+            "defence": 12,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ce/ed/ee/d6/ceedeed6.png"
         },
@@ -874,7 +874,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 9,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/32/1d/9f/aa/321d9faa.png"
         },
@@ -886,7 +886,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 15,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Ball control",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/81/bf/59/0d/81bf590d.png"
         },
@@ -898,7 +898,7 @@ module.exports = {
             "position": "ATT",
             "cost": 7,
             "attack": 9,
-            "defense": 4,
+            "defence": 4,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f9/5e/fa/20/f95efa20.png"
         },
@@ -910,7 +910,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 12,
-            "defense": 5,
+            "defence": 5,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/78/12/3b/8c/78123b8c.png"
         },
@@ -922,7 +922,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 13,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7d/fc/1f/6a/7dfc1f6a.png"
         },
@@ -934,7 +934,7 @@ module.exports = {
             "position": "GK",
             "cost": 9,
             "attack": 5,
-            "defense": 13,
+            "defence": 13,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/78/40/6c/a0/78406ca0.png"
         },
@@ -946,7 +946,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b9/13/b7/42/b913b742.png"
         },
@@ -958,7 +958,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 8,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e8/43/77/82/e8437782.png"
         },
@@ -970,7 +970,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 6,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/30/27/fc/54/3027fc54.png"
         },
@@ -982,7 +982,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 7,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/25/ed/9f/a3/25ed9fa3.png"
         },
@@ -994,7 +994,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 12,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/eb/36/14/68/eb361468.png"
         },
@@ -1006,7 +1006,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 7,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f5/75/d5/3e/f575d53e.png"
         },
@@ -1018,7 +1018,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 7,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/9b/91/fd/2c/9b91fd2c.png"
         },
@@ -1030,7 +1030,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 14,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f8/1f/34/d5/f81f34d5.png"
         },
@@ -1042,7 +1042,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 12,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/76/8b/2e/fa/768b2efa.png"
         },
@@ -1054,7 +1054,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 11,
-            "defense": 5,
+            "defence": 5,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/2d/a7/46/65/2da74665.png"
         },
@@ -1066,7 +1066,7 @@ module.exports = {
             "position": "GK",
             "cost": 11,
             "attack": 6,
-            "defense": 17,
+            "defence": 17,
             "special_trait": "Diving",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/29/19/07/54/29190754.png"
         },
@@ -1078,7 +1078,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 9,
-            "defense": 15,
+            "defence": 15,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/06/59/3a/4a/06593a4a.png"
         },
@@ -1090,7 +1090,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 8,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/5c/d0/d0/67/5cd0d067.png"
         },
@@ -1102,7 +1102,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 14,
+            "defence": 14,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f2/ac/b7/90/f2acb790.png"
         },
@@ -1114,7 +1114,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 14,
+            "defence": 14,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8e/f3/fc/38/8ef3fc38.png"
         },
@@ -1126,7 +1126,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 8,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/71/95/bf/bc/7195bfbc.png"
         },
@@ -1138,7 +1138,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 12,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a6/67/4b/05/a6674b05.png"
         },
@@ -1150,7 +1150,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 8,
-            "defense": 12,
+            "defence": 12,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ae/a7/9b/2e/aea79b2e.png"
         },
@@ -1162,7 +1162,7 @@ module.exports = {
             "position": "ATT",
             "cost": 13,
             "attack": 21,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Speed",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/d4/b3/4f/d1/d4b34fd1.png"
         },
@@ -1174,7 +1174,7 @@ module.exports = {
             "position": "ATT",
             "cost": 13,
             "attack": 19,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/25/e0/35/5a/25e0355a.png"
         },
@@ -1186,7 +1186,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 12,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/97/2c/9b/e4/972c9be4.png"
         },
@@ -1198,7 +1198,7 @@ module.exports = {
             "position": "GK",
             "cost": 7,
             "attack": 5,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/1b/34/8e/fb/1b348efb.png"
         },
@@ -1210,7 +1210,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 6,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dc/47/82/5c/dc47825c.png"
         },
@@ -1222,7 +1222,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 4,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3f/54/bc/07/3f54bc07.png"
         },
@@ -1234,7 +1234,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f6/f1/47/03/f6f14703.png"
         },
@@ -1246,7 +1246,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 6,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/91/0a/16/89/910a1689.png"
         },
@@ -1258,7 +1258,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 6,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/cf/8a/8a/b0/cf8a8ab0.png"
         },
@@ -1270,7 +1270,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 6,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f3/e2/14/05/f3e21405.png"
         },
@@ -1282,7 +1282,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 10,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Playmaker",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3e/26/26/da/3e2626da.png"
         },
@@ -1294,7 +1294,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 10,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/36/cc/63/34/36cc6334.png"
         },
@@ -1306,7 +1306,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 11,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/85/23/86/97/85238697.png"
         },
@@ -1318,7 +1318,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 12,
-            "defense": 5,
+            "defence": 5,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/9a/48/6a/6d/9a486a6d.png"
         },
@@ -1330,7 +1330,7 @@ module.exports = {
             "position": "GK",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Diving",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a2/c5/bc/68/a2c5bc68.png"
         },
@@ -1342,7 +1342,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/34/f4/0b/81/34f40b81.png"
         },
@@ -1354,7 +1354,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/10/83/f6/26/1083f626.png"
         },
@@ -1366,7 +1366,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/cf/e2/98/09/cfe29809.png"
         },
@@ -1378,7 +1378,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 6,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8f/57/56/9e/8f57569e.png"
         },
@@ -1390,7 +1390,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/d5/76/de/47/d576de47.png"
         },
@@ -1402,7 +1402,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f8/22/af/41/f822af41.png"
         },
@@ -1414,7 +1414,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 8,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/58/45/6e/ec/58456eec.png"
         },
@@ -1426,7 +1426,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 12,
-            "defense": 5,
+            "defence": 5,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fa/b0/d0/cc/fab0d0cc.png"
         },
@@ -1438,7 +1438,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 14,
-            "defense": 5,
+            "defence": 5,
             "special_trait": "Speed",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/42/28/18/be/422818be.png"
         },
@@ -1450,7 +1450,7 @@ module.exports = {
             "position": "ATT",
             "cost": 8,
             "attack": 10,
-            "defense": 5,
+            "defence": 5,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/fc/7e/42/8f/fc7e428f.png"
         },
@@ -1462,7 +1462,7 @@ module.exports = {
             "position": "GK",
             "cost": 8,
             "attack": 5,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/16/78/ec/0d/1678ec0d.png"
         },
@@ -1474,7 +1474,7 @@ module.exports = {
             "position": "DEF",
             "cost": 7,
             "attack": 5,
-            "defense": 9,
+            "defence": 9,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/62/9f/14/04/629f1404.png"
         },
@@ -1486,7 +1486,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 14,
+            "defence": 14,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/1c/3e/74/25/1c3e7425.png"
         },
@@ -1498,7 +1498,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 5,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c2/43/15/8e/c243158e.png"
         },
@@ -1510,7 +1510,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 7,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dd/f0/a2/2a/ddf0a22a.png"
         },
@@ -1522,7 +1522,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/85/75/8c/0d/85758c0d.png"
         },
@@ -1534,7 +1534,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 6,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/83/ea/23/3a/83ea233a.png"
         },
@@ -1546,7 +1546,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 12,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/d2/eb/40/86d2eb40.png"
         },
@@ -1558,7 +1558,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 9,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bf/43/e4/73/bf43e473.png"
         },
@@ -1570,7 +1570,7 @@ module.exports = {
             "position": "ATT",
             "cost": 15,
             "attack": 25,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b1/36/ce/cf/b136cecf.png"
         },
@@ -1582,7 +1582,7 @@ module.exports = {
             "position": "ATT",
             "cost": 7,
             "attack": 10,
-            "defense": 3,
+            "defence": 3,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bc/83/69/76/bc836976.png"
         },
@@ -1594,7 +1594,7 @@ module.exports = {
             "position": "GK",
             "cost": 10,
             "attack": 6,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Reflexes",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/09/7d/2f/dd/097d2fdd.png"
         },
@@ -1606,7 +1606,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 14,
+            "defence": 14,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4e/dd/5c/01/4edd5c01.png"
         },
@@ -1618,7 +1618,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 6,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/41/68/2d/63/41682d63.png"
         },
@@ -1630,7 +1630,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4f/ef/9d/e7/4fef9de7.png"
         },
@@ -1642,7 +1642,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/73/a8/be/6e/73a8be6e.png"
         },
@@ -1654,7 +1654,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 8,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Ball control",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4a/f2/2b/c4/4af22bc4.png"
         },
@@ -1666,7 +1666,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 7,
-            "defense": 12,
+            "defence": 12,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/3f/b8/91/44/3fb89144.png"
         },
@@ -1678,7 +1678,7 @@ module.exports = {
             "position": "MID",
             "cost": 11,
             "attack": 15,
-            "defense": 10,
+            "defence": 10,
             "special_trait": "Playmaker",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c1/87/34/9a/c187349a.png"
         },
@@ -1690,7 +1690,7 @@ module.exports = {
             "position": "ATT",
             "cost": 7,
             "attack": 8,
-            "defense": 5,
+            "defence": 5,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/23/0c/11/f7/230c11f7.png"
         },
@@ -1702,7 +1702,7 @@ module.exports = {
             "position": "ATT",
             "cost": 11,
             "attack": 16,
-            "defense": 9,
+            "defence": 9,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/f7/e9/49/24/f7e94924.png"
         },
@@ -1714,7 +1714,7 @@ module.exports = {
             "position": "ATT",
             "cost": 11,
             "attack": 17,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ba/17/cb/6f/ba17cb6f.png"
         },
@@ -1726,7 +1726,7 @@ module.exports = {
             "position": "GK",
             "cost": 10,
             "attack": 6,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Reflexes",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b6/2b/ee/11/b62bee11.png"
         },
@@ -1738,7 +1738,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 6,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/8f/62/bc/54/8f62bc54.png"
         },
@@ -1750,7 +1750,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 7,
-            "defense": 13,
+            "defence": 13,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/a1/bb/97/12/a1bb9712.png"
         },
@@ -1762,7 +1762,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 6,
-            "defense": 13,
+            "defence": 13,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/dc/f5/41/86dcf541.png"
         },
@@ -1774,7 +1774,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 7,
-            "defense": 11,
+            "defence": 11,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/10/ee/2d/3a/10ee2d3a.png"
         },
@@ -1786,7 +1786,7 @@ module.exports = {
             "position": "MID",
             "cost": 9,
             "attack": 5,
-            "defense": 13,
+            "defence": 13,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/4b/12/ae/ec/4b12aeec.png"
         },
@@ -1798,7 +1798,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 7,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ea/4c/0f/27/ea4c0f27.png"
         },
@@ -1810,7 +1810,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 12,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Passing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c0/c3/e1/e3/c0c3e1e3.png"
         },
@@ -1822,7 +1822,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 13,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Dribbling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/83/d1/58/a6/83d158a6.png"
         },
@@ -1834,7 +1834,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 11,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Long shot",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/96/83/65/24/96836524.png"
         },
@@ -1846,7 +1846,7 @@ module.exports = {
             "position": "ATT",
             "cost": 9,
             "attack": 13,
-            "defense": 6,
+            "defence": 6,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/d8/5b/2c/23/d85b2c23.png"
         },
@@ -1858,7 +1858,7 @@ module.exports = {
             "position": "GK",
             "cost": 11,
             "attack": 8,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Reflexes",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/24/2d/e7/a2/242de7a2.png"
         },
@@ -1870,7 +1870,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 13,
+            "defence": 13,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0d/ca/d3/01/0dcad301.png"
         },
@@ -1882,7 +1882,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 8,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Strength",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/38/c9/29/3b/38c9293b.png"
         },
@@ -1894,7 +1894,7 @@ module.exports = {
             "position": "DEF",
             "cost": 9,
             "attack": 6,
-            "defense": 12,
+            "defence": 12,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c2/0e/8f/95/c20e8f95.png"
         },
@@ -1906,7 +1906,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 5,
-            "defense": 11,
+            "defence": 11,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/bb/42/1c/ba/bb421cba.png"
         },
@@ -1918,7 +1918,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 11,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/dc/a5/3f/8b/dca53f8b.png"
         },
@@ -1930,7 +1930,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 8,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/82/43/1a/3e/82431a3e.png"
         },
@@ -1942,7 +1942,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 9,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/6a/9f/81/e5/6a9f81e5.png"
         },
@@ -1954,7 +1954,7 @@ module.exports = {
             "position": "MID",
             "cost": 10,
             "attack": 13,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Crossing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/7f/6a/07/08/7f6a0708.png"
         },
@@ -1966,7 +1966,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 15,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/ea/d3/58/b3/ead358b3.png"
         },
@@ -1978,7 +1978,7 @@ module.exports = {
             "position": "ATT",
             "cost": 10,
             "attack": 14,
-            "defense": 7,
+            "defence": 7,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/86/8a/1c/e3/868a1ce3.png"
         },
@@ -1990,7 +1990,7 @@ module.exports = {
             "position": "GK",
             "cost": 8,
             "attack": 5,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/e8/6a/ad/29/e86aad29.png"
         },
@@ -2002,7 +2002,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/29/a9/04/24/29a90424.png"
         },
@@ -2014,7 +2014,7 @@ module.exports = {
             "position": "DEF",
             "cost": 11,
             "attack": 7,
-            "defense": 16,
+            "defence": 16,
             "special_trait": "Heading",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/97/93/f0/a5/9793f0a5.png"
         },
@@ -2026,7 +2026,7 @@ module.exports = {
             "position": "DEF",
             "cost": 10,
             "attack": 6,
-            "defense": 14,
+            "defence": 14,
             "special_trait": "Tackling",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/24/f3/3a/57/24f33a57.png"
         },
@@ -2038,7 +2038,7 @@ module.exports = {
             "position": "DEF",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/52/e1/f4/ef/52e1f4ef.png"
         },
@@ -2050,7 +2050,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 8,
-            "defense": 8,
+            "defence": 8,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/2b/10/2e/a9/2b102ea9.png"
         },
@@ -2062,7 +2062,7 @@ module.exports = {
             "position": "MID",
             "cost": 8,
             "attack": 6,
-            "defense": 10,
+            "defence": 10,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/b5/6b/4d/43/b56b4d43.png"
         },
@@ -2074,7 +2074,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 6,
-            "defense": 7,
+            "defence": 7,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/0b/0a/1f/c7/0b0a1fc7.png"
         },
@@ -2086,7 +2086,7 @@ module.exports = {
             "position": "MID",
             "cost": 7,
             "attack": 8,
-            "defense": 6,
+            "defence": 6,
             "special_trait": null,
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/1d/20/21/2e/1d20212e.png"
         },
@@ -2098,7 +2098,7 @@ module.exports = {
             "position": "ATT",
             "cost": 11,
             "attack": 17,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Free kick",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/c4/e4/ba/fd/c4e4bafd.png"
         },
@@ -2110,7 +2110,7 @@ module.exports = {
             "position": "ATT",
             "cost": 11,
             "attack": 17,
-            "defense": 8,
+            "defence": 8,
             "special_trait": "Finishing",
             "url": "https://hearthcards.ams3.digitaloceanspaces.com/21/3b/da/2b/213bda2b.png"
         }
