@@ -46,6 +46,301 @@ let roundsInfo = {
     winner: null
 };
 
+let applyFunctionalCard = (username, functionalCard) => {
+    if (functionalCard.for_total_attack || functionalCard.for_total_defence) {
+        // choose a random card from the enemy
+        let playerCardInfo = chooseRandomCard(username);
+
+        if (functionalCard.for_total_attack) {
+            if (playerCardInfo.bonus_attack) {
+                playerCardInfo.bonus_attack += functionalCard.attack;
+            } else {
+                playerCardInfo.bonus_attack = functionalCard.attack;
+            }
+            playerCardInfo.attack += functionalCard.attack;
+        }
+
+        if (functionalCard.for_total_defence) {
+            if (playerCardInfo.bonus_defence) {
+                playerCardInfo.bonus_defence += functionalCard.defence;
+            } else {
+                playerCardInfo.bonus_defence = functionalCard.defence;
+            }
+            playerCardInfo.defence += functionalCard.defence;
+        }
+
+        if (playerCardInfo.position === 'GOALKEEPER') {
+            players[username].board.goalkeeper.card = playerCardInfo;
+            players[username].board.goalkeeper.score = playerCardInfo.attack + playerCardInfo.defence;
+        } else {
+            players[username].board[playerCardInfo.position.toLowerCase()].cards[playerCardInfo.index] = playerCardInfo;
+            players[username].board[playerCardInfo.position.toLowerCase()].score += ((functionalCard.attack || 0) + (functionalCard.defence || 0));
+        }
+
+        players[username].totalPoints += ((functionalCard.attack || 0) + (functionalCard.defence || 0));
+    } else {
+        if (functionalCard.attack) {
+            if (functionalCard.attack_special_trait_1) {
+                let specialTraits = [];
+
+                if (functionalCard.attack_special_trait_1 === "not null") {
+                    // apply the attack on every enemy card that has a special trait
+
+                    if (players[username].board.goalkeeper.card && players[username].board.goalkeeper.card.special_trait) {
+                        if (players[username].board.goalkeeper.card.bonus_attack) {
+                            players[username].board.goalkeeper.card.bonus_attack += functionalCard.attack;
+                        } else {
+                            players[username].board.goalkeeper.card.bonus_attack = functionalCard.attack;
+                        }
+                        players[username].board.goalkeeper.card.attack += functionalCard.attack;
+
+                        // update goalkeeper score
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].totalPoints += functionalCard.attack;
+                    }
+
+                    players[username].board.defence.cards.forEach((card, index) => {
+                        if (card.special_trait) {
+                            if (card.bonus_attack) {
+                                card.bonus_attack += functionalCard.attack;
+                            } else {
+                                card.bonus_attack = functionalCard.attack;
+                            }
+                            card.attack += functionalCard.attack;
+                            players[username].board.defence.score += functionalCard.attack;
+                            players[username].board.defence.cards[index] = card;
+                            players[username].totalPoints += functionalCard.attack;
+                        }
+                    });
+
+                    players[username].board.mid.cards.forEach((card, index) => {
+                        if (card.special_trait) {
+                            if (card.bonus_attack) {
+                                card.bonus_attack += functionalCard.attack;
+                            } else {
+                                card.bonus_attack = functionalCard.attack;
+                            }
+                            card.attack += functionalCard.attack;
+                            players[username].board.mid.score += functionalCard.attack;
+                            players[username].board.mid.cards[index] = card;
+                            players[username].totalPoints += functionalCard.attack;
+                        }
+                    });
+
+                    players[username].board.attack.cards.forEach((card, index) => {
+                        if (card.special_trait) {
+                            if (card.bonus_attack) {
+                                card.bonus_attack += functionalCard.attack;
+                            } else {
+                                card.bonus_attack = functionalCard.attack;
+                            }
+                            card.attack += functionalCard.attack;
+                            players[username].board.attack.score += functionalCard.attack;
+                            players[username].board.attack.cards[index] = card;
+                            players[username].totalPoints += functionalCard.attack;
+                        }
+                    });
+                } else {
+                    specialTraits.push(functionalCard.attack_special_trait_1);
+
+                    if (functionalCard.attack_special_trait_2) {
+                        specialTraits.push(functionalCard.attack_special_trait_2);
+                    }
+                }
+
+                if (specialTraits.length) {
+                    // apply the attack only on the enemy cards that have one of the attack special traits specified by the functional card
+
+                    if (specialTraits.includes(players[username].board.goalkeeper.card ? players[username].board.goalkeeper.card.special_trait : null)) {
+                        if (players[username].board.goalkeeper.card.bonus_attack) {
+                            players[username].board.goalkeeper.card.bonus_attack += functionalCard.attack;
+                        } else {
+                            players[username].board.goalkeeper.card.bonus_attack = functionalCard.attack;
+                        }
+                        players[username].board.goalkeeper.card.attack += functionalCard.attack;
+
+                        // update goalkeeper score
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].totalPoints += functionalCard.attack;
+                    }
+
+                    players[username].board.defence.cards.forEach((card, index) => {
+                        if (specialTraits.includes(card.special_trait)) {
+                            if (card.bonus_attack) {
+                                card.bonus_attack += functionalCard.attack;
+                            } else {
+                                card.bonus_attack = functionalCard.attack;
+                            }
+                            card.attack += functionalCard.attack;
+                            players[username].board.defence.score += functionalCard.attack;
+                            players[username].board.defence.cards[index] = card;
+                            players[username].totalPoints += functionalCard.attack;
+                        }
+                    });
+
+                    players[username].board.mid.cards.forEach((card, index) => {
+                        if (specialTraits.includes(card.special_trait)) {
+                            if (card.bonus_attack) {
+                                card.bonus_attack += functionalCard.attack;
+                            } else {
+                                card.bonus_attack = functionalCard.attack;
+                            }
+                            card.attack += functionalCard.attack;
+                            players[username].board.mid.score += functionalCard.attack;
+                            players[username].board.mid.cards[index] = card;
+                            players[username].totalPoints += functionalCard.attack;
+                        }
+                    });
+
+                    players[username].board.attack.cards.forEach((card, index) => {
+                        if (specialTraits.includes(card.special_trait)) {
+                            if (card.bonus_attack) {
+                                card.bonus_attack += functionalCard.attack;
+                            } else {
+                                card.bonus_attack = functionalCard.attack;
+                            }
+                            card.attack += functionalCard.attack;
+                            players[username].board.attack.score += functionalCard.attack;
+                            players[username].board.attack.cards[index] = card;
+                            players[username].totalPoints += functionalCard.attack;
+                        }
+                    });
+                }
+            }
+        }
+
+        if (functionalCard.defence) {
+            if (functionalCard.defence_special_trait_1) {
+                let specialTraits = [];
+
+                if (functionalCard.defence_special_trait_1 === "not null") {
+                    // apply the defence on every enemy card that has a special trait
+
+                    if (players[username].board.goalkeeper.card && players[username].board.goalkeeper.card.special_trait) {
+                        if (players[username].board.goalkeeper.card.bonus_defence) {
+                            players[username].board.goalkeeper.card.bonus_defence += functionalCard.defence;
+                        } else {
+                            players[username].board.goalkeeper.card.bonus_defence = functionalCard.defence;
+                        }
+                        players[username].board.goalkeeper.card.defence += functionalCard.defence;
+
+                        // update goalkeeper score
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].totalPoints += functionalCard.defence;
+                    }
+
+                    players[username].board.defence.cards.forEach((card, index) => {
+                        if (card.special_trait) {
+                            if (card.bonus_defence) {
+                                card.bonus_defence += functionalCard.defence;
+                            } else {
+                                card.bonus_defence = functionalCard.defence;
+                            }
+                            card.defence += functionalCard.defence;
+                            players[username].board.defence.score += functionalCard.defence;
+                            players[username].board.defence.cards[index] = card;
+                            players[username].totalPoints += functionalCard.defence;
+                        }
+                    });
+
+                    players[username].board.mid.cards.forEach((card, index) => {
+                        if (card.special_trait) {
+                            if (card.bonus_defence) {
+                                card.bonus_defence += functionalCard.defence;
+                            } else {
+                                card.bonus_defence = functionalCard.defence;
+                            }
+                            card.defence += functionalCard.defence;
+                            players[username].board.mid.score += functionalCard.defence;
+                            players[username].board.mid.cards[index] = card;
+                            players[username].totalPoints += functionalCard.defence;
+                        }
+                    });
+
+                    players[username].board.attack.cards.forEach((card, index) => {
+                        if (card.special_trait) {
+                            if (card.bonus_defence) {
+                                card.bonus_defence += functionalCard.defence;
+                            } else {
+                                card.bonus_defence = functionalCard.defence;
+                            }
+                            card.defence += functionalCard.defence;
+                            players[username].board.attack.score += functionalCard.defence;
+                            players[username].board.attack.cards[index] = card;
+                            players[username].totalPoints += functionalCard.defence;
+                        }
+                    });
+                } else {
+                    specialTraits.push(functionalCard.defence_special_trait_1);
+
+                    if (functionalCard.defence_special_trait_2) {
+                        specialTraits.push(functionalCard.defence_special_trait_2);
+                    }
+                }
+
+                if (specialTraits.length) {
+                    // apply the defence only on the enemy cards that have one of the defence special traits specified by the functional card
+
+                    if (specialTraits.includes(players[username].board.goalkeeper.card ? players[username].board.goalkeeper.card.special_trait : null)) {
+                        if (players[username].board.goalkeeper.card.bonus_defence) {
+                            players[username].board.goalkeeper.card.bonus_defence += functionalCard.defence;
+                        } else {
+                            players[username].board.goalkeeper.card.bonus_defence = functionalCard.defence;
+                        }
+                        players[username].board.goalkeeper.card.defence += functionalCard.defence;
+
+                        // update goalkeeper score
+                        players[username].board.goalkeeper.score = players[username].board.goalkeeper.card.attack + players[username].board.goalkeeper.card.defence;
+                        players[username].totalPoints += functionalCard.defence;
+                    }
+
+                    players[username].board.defence.cards.forEach((card, index) => {
+                        if (specialTraits.includes(card.special_trait)) {
+                            if (card.bonus_defence) {
+                                card.bonus_defence += functionalCard.defence;
+                            } else {
+                                card.bonus_defence = functionalCard.defence;
+                            }
+                            card.defence += functionalCard.defence;
+                            players[username].board.defence.score += functionalCard.defence;
+                            players[username].board.defence.cards[index] = card;
+                            players[username].totalPoints += functionalCard.defence;
+                        }
+                    });
+
+                    players[username].board.mid.cards.forEach((card, index) => {
+                        if (specialTraits.includes(card.special_trait)) {
+                            if (card.bonus_defence) {
+                                card.bonus_defence += functionalCard.defence;
+                            } else {
+                                card.bonus_defence = functionalCard.defence;
+                            }
+                            card.defence += functionalCard.defence;
+                            players[username].board.mid.score += functionalCard.defence;
+                            players[username].board.mid.cards[index] = card;
+                            players[username].totalPoints += functionalCard.defence;
+                        }
+                    });
+
+                    players[username].board.attack.cards.forEach((card, index) => {
+                        if (specialTraits.includes(card.special_trait)) {
+                            if (card.bonus_defence) {
+                                card.bonus_defence += functionalCard.defence;
+                            } else {
+                                card.bonus_defence = functionalCard.defence;
+                            }
+                            card.defence += functionalCard.defence;
+                            players[username].board.attack.score += functionalCard.defence;
+                            players[username].board.attack.cards[index] = card;
+                            players[username].totalPoints += functionalCard.defence;
+                        }
+                    });
+                }
+            }
+        }
+    }
+};
+
 // choose a random card from player board
 let chooseRandomCard = player => {
     let playerInfo = players[player];
@@ -356,18 +651,65 @@ app.post('/play_card', (req, res) => {
         // remove card from player's hand
         players[username].cards.minions.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
 
+        let card = allCards.minions[cardId];
+
+        // according to the players' heroes/leaders cards, the played minion gets more bonus
+        let playersUsername = Object.keys(players);
+
+        if (players[playersUsername[0]].cards.hero.country) {
+            if (card.country === players[playersUsername[0]].cards.hero.country) {
+                card.attack += players[playersUsername[0]].cards.hero.attack;
+                card.defence += players[playersUsername[0]].cards.hero.defence;
+            }
+        }
+
+        if (players[playersUsername[1]].cards.hero.country) {
+            if (card.country === players[playersUsername[1]].cards.hero.country) {
+                card.attack += players[playersUsername[1]].cards.hero.attack;
+                card.defence += players[playersUsername[1]].cards.hero.defence;
+            }
+        }
+
+        if (players[playersUsername[0]].cards.hero.club) {
+            if (card.club === players[playersUsername[0]].cards.hero.club) {
+                card.attack += players[playersUsername[0]].cards.hero.club_attack;
+                card.defence += players[playersUsername[0]].cards.hero.club_defence;
+            }
+        }
+
+        if (players[playersUsername[1]].cards.hero.club) {
+            if (card.club === players[playersUsername[1]].cards.hero.club) {
+                card.attack += players[playersUsername[1]].cards.hero.club_attack;
+                card.defence += players[playersUsername[1]].cards.hero.club_defence;
+            }
+        }
+
         // add card to the board
         if (position === 'goalkeeper') {
-            players[username].board.goalkeeper.card = allCards.minions[cardId];
+            players[username].board.goalkeeper.card = card;
+            players[username].board.goalkeeper.score = ((card.attack || 0) + (card.defence || 0));
         } else {
             players[username].board[position].cards.push(allCards.minions[cardId]);
+            players[username].board[position].score += ((card.attack || 0) + (card.defence || 0));
         }
+
+        // add tot total points
+        players[username].totalPoints += ((card.attack || 0) + (card.defence || 0));
     } else if (cardType === 'F') {
         // remove card from player's hand
         players[username].cards.functional.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
 
-        // do something
-        // ...
+        let functionalCard = allCards.functional[cardId];
+        let enemyUsername = Object.keys(players).filter(username => username !== currentPlayerUsername)[0];
+
+        if (functionalCard.who_applies_to === 'Opposition') {
+            applyFunctionalCard(enemyUsername, functionalCard);
+        } else if (functionalCard.who_applies_to === 'My team') {
+            applyFunctionalCard(currentPlayerUsername, functionalCard);
+        } else { // All
+            applyFunctionalCard(enemyUsername, functionalCard);
+            applyFunctionalCard(currentPlayerUsername, functionalCard);
+        }
     }
 
     // respond
@@ -416,12 +758,26 @@ app.post('/end_round', (req, res) => {
 
     if (!roundsInfo.is_ending) {
         roundsInfo.is_ending = true;
+
+        // respond
+        res.json(response.success(true));
+
+        // emit the new 'roundsInfo' object state
+        io.emit('round', roundsInfo);
     } else {
         roundsInfo.is_ending = false;
 
         // find current round winner;
-        // TODO: determine winner username by comparing players total points
-        let winnerUsername = Object.keys(players)[Math.floor(Math.random() * 2)];
+        let playersUsername = Object.keys(players);
+        let winnerUsername;
+
+        if (players[playersUsername[0]].totalPoints > players[playersUsername[1]].totalPoints) {
+            winnerUsername = playersUsername[0];
+        } else if (players[playersUsername[0]].totalPoints < players[playersUsername[1]].totalPoints){
+            winnerUsername = playersUsername[1];
+        } else {
+            winnerUsername = Object.keys(players)[Math.floor(Math.random() * 2)];
+        }
 
         // set current round winner;
         if (roundsInfo.current_round === 1) {
@@ -433,11 +789,9 @@ app.post('/end_round', (req, res) => {
         }
         players[winnerUsername].noWins++;
 
-        // if this was the last round => end game
+        // if this was the last round => end game (set the winner)
         if (roundsInfo.current_round === 3) {
             // set winner
-            let playersUsername = Object.keys(players);
-
             if (players[playersUsername[0]].noWins > players[playersUsername[1]].noWins) { // first player won
                 roundsInfo.winner = playersUsername[0];
             } else { // second player won
@@ -446,12 +800,58 @@ app.post('/end_round', (req, res) => {
         } else {
             roundsInfo.current_round++;
         }
+
+        // clean first player board
+        players[playersUsername[0]].totalPoints = 0;
+        players[playersUsername[0]].board = {
+            goalkeeper: {
+                score: 0,
+                card: null
+            },
+            defence: {
+                score: 0,
+                cards: []
+            },
+            mid: {
+                score: 0,
+                cards: []
+            },
+            attack: {
+                score: 0,
+                cards: []
+            }
+        };
+
+        // clean second player board
+        players[playersUsername[1]].totalPoints = 0;
+        players[playersUsername[1]].board = {
+            goalkeeper: {
+                score: 0,
+                card: null
+            },
+            defence: {
+                score: 0,
+                cards: []
+            },
+            mid: {
+                score: 0,
+                cards: []
+            },
+            attack: {
+                score: 0,
+                cards: []
+            }
+        };
+
+        // respond
+        res.json(response.success(true));
+
+        // emit the new 'players' object state
+        io.emit('gameplay', players);
+
+        // emit the new 'rountsInfo' object state
+        io.emit('round', roundsInfo);
     }
-
-    // respond
-    res.json(response.success(true));
-
-    io.emit('round', roundsInfo);
 });
 
 app.post('*', (req, res) => {
