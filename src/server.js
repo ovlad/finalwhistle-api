@@ -697,7 +697,7 @@ app.post('/play_card', (req, res) => {
         players[username].totalPoints += ((card.attack || 0) + (card.defense || 0));
     } else if (cardType === 'F') {
         // remove card from player's hand
-        players[username].cards.functional.splice(players[username].cards.minions.findIndex(c => c.id === cardId), 1);
+        players[username].cards.functional.splice(players[username].cards.functional.findIndex(c => c.id === cardId), 1);
 
         let functionalCard = allCards.functional[cardId];
         let enemyUsername = Object.keys(players).filter(username => username !== currentPlayerUsername)[0];
